@@ -25,7 +25,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol VBTableViewDatasource <UITableViewDataSource>
+@protocol VBTableViewDataSource <UITableViewDataSource>
 
 @end
 
@@ -39,7 +39,7 @@
 
 @interface VBTableViewController : UITableViewController
 
-@property (nonatomic, weak) id<VBTableViewDatasource> datasource;
+@property (nonatomic, weak) id<VBTableViewDataSource> dataSource;
 @property (nonatomic, weak) id<VBTableViewDelegate> delegate;
 
 #pragma mark - table

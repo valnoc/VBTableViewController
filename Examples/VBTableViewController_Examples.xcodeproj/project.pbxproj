@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2186CD1BAEFEC100FDD2BD /* VBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2186CC1BAEFEC100FDD2BD /* VBTableViewController.m */; };
 		5BD998AE1BAEE66C002B78E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD998AD1BAEE66C002B78E5 /* main.m */; };
 		5BD998B11BAEE66C002B78E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD998B01BAEE66C002B78E5 /* AppDelegate.m */; };
 		5BD998B41BAEE66C002B78E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD998B31BAEE66C002B78E5 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		5BD998B91BAEE66C002B78E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD998B81BAEE66C002B78E5 /* Images.xcassets */; };
 		5BD998BC1BAEE66C002B78E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD998BA1BAEE66C002B78E5 /* LaunchScreen.xib */; };
 		5BD998C81BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD998C71BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.m */; };
-		5BD998D41BAEE6B8002B78E5 /* VBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD998D31BAEE6B8002B78E5 /* VBTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B2186CB1BAEFEC100FDD2BD /* VBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewController.h; sourceTree = "<group>"; };
+		5B2186CC1BAEFEC100FDD2BD /* VBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController.m; sourceTree = "<group>"; };
 		5BD998A81BAEE66C002B78E5 /* VBTableViewController_Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBTableViewController_Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD998AC1BAEE66C002B78E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD998AD1BAEE66C002B78E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +43,6 @@
 		5BD998C11BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBTableViewController_ExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD998C61BAEE66D002B78E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD998C71BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController_ExamplesTests.m; sourceTree = "<group>"; };
-		5BD998D21BAEE6B8002B78E5 /* VBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewController.h; sourceTree = "<group>"; };
-		5BD998D31BAEE6B8002B78E5 /* VBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +63,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B2186CA1BAEFEC100FDD2BD /* VBTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5B2186CB1BAEFEC100FDD2BD /* VBTableViewController.h */,
+				5B2186CC1BAEFEC100FDD2BD /* VBTableViewController.m */,
+			);
+			name = VBTableViewController;
+			path = ../VBTableViewController;
+			sourceTree = "<group>";
+		};
 		5BD9989F1BAEE66C002B78E5 = {
 			isa = PBXGroup;
 			children = (
-				5BD998D11BAEE695002B78E5 /* VBTableViewController */,
+				5B2186CA1BAEFEC100FDD2BD /* VBTableViewController */,
 				5BD998AA1BAEE66C002B78E5 /* VBTableViewController_Examples */,
 				5BD998C41BAEE66D002B78E5 /* VBTableViewController_ExamplesTests */,
 				5BD998A91BAEE66C002B78E5 /* Products */,
@@ -121,15 +131,6 @@
 				5BD998C61BAEE66D002B78E5 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5BD998D11BAEE695002B78E5 /* VBTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5BD998D21BAEE6B8002B78E5 /* VBTableViewController.h */,
-				5BD998D31BAEE6B8002B78E5 /* VBTableViewController.m */,
-			);
-			path = VBTableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD998B41BAEE66C002B78E5 /* ViewController.m in Sources */,
-				5BD998D41BAEE6B8002B78E5 /* VBTableViewController.m in Sources */,
+				5B2186CD1BAEFEC100FDD2BD /* VBTableViewController.m in Sources */,
 				5BD998B11BAEE66C002B78E5 /* AppDelegate.m in Sources */,
 				5BD998AE1BAEE66C002B78E5 /* main.m in Sources */,
 			);

@@ -25,14 +25,10 @@
 
 #import "VBTableViewController.h"
 
-#define kTableViewControllerCellEmptyListIdentifier @"kTableViewControllerCellEmptyListIdentifier"
-
 @interface VBTableViewController ()
 
 @property (nonatomic, strong) UIView* paginationView;
 @property (nonatomic, strong) UIView* prePaginationFooterView;
-
-@property (nonatomic, strong) NSLayoutConstraint* cnstrEmptyListViewHeight;
 
 @end
 
@@ -41,25 +37,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.delegate = self;
+    //
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension;
     self.tableView.sectionFooterHeight = UITableViewAutomaticDimension;
-    
+    //
     self.showEmptyCells = self.showEmptyCells;
-    
-    [self.tableView registerClass:[UITableViewCell class]
-           forCellReuseIdentifier:kTableViewControllerCellEmptyListIdentifier];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void) viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    
-    self.cnstrEmptyListViewHeight.constant = self.view.bounds.size.height;
+#pragma mark - dataSource/delegate
+- (void) setDataSource:(id<VBTableViewDataSource>)dataSource {
+    _dataSource = dataSource;
+    self.tableView.dataSource = dataSource;
+}
+- (void) setDelegate:(id<VBTableViewDelegate>)delegate {
+    _delegate = delegate;
+    self.tableView.delegate = delegate;
 }
 
 #pragma mark - table
@@ -84,12 +78,14 @@
 #pragma mark - pullToRefresh
 - (void) setPullToRefreshEnabled:(BOOL)pullToRefreshEnabled {
     _pullToRefreshEnabled = pullToRefreshEnabled;
+    
     if (_pullToRefreshEnabled) {
         UIRefreshControl* p2RView = [UIRefreshControl new];
         [p2RView addTarget:self
                     action:@selector(pullToRefreshEvent:)
           forControlEvents:UIControlEventValueChanged];
         self.refreshControl = p2RView;
+        
     }else{
         self.refreshControl = nil;
     }
@@ -110,17 +106,15 @@
 
 #pragma mark - empty cells
 - (void) setShowEmptyCells:(BOOL)showEmptyCells {
-//    if (_showEmptyCells != showEmptyCells) {
-        _showEmptyCells = showEmptyCells;
-        if (_showEmptyCells) {
-            self.tableView.tableFooterView = nil;
-
-        }else if (self.tableView.tableFooterView == nil) {
-            UIView* view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
-            view.backgroundColor = [UIColor clearColor];
-            self.tableView.tableFooterView = view;
-        }
-//    }
+    _showEmptyCells = showEmptyCells;
+    if (_showEmptyCells) {
+        self.tableView.tableFooterView = nil;
+        
+    }else if (self.tableView.tableFooterView == nil) {
+        UIView* view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
+        view.backgroundColor = [UIColor clearColor];
+        self.tableView.tableFooterView = view;
+    }
 }
 
 #pragma mark - pagination
@@ -143,11 +137,9 @@
         
         UIActivityIndicatorView* aiv = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [aiv startAnimating];
-        [view addSubview:aiv
-              withLayout:@{VBAutolayoutAttributeTop:        @"0",
-                           VBAutolayoutAttributeBottom:     @"0",
-                           VBAutolayoutAttributeLeading:    @"0",
-                           VBAutolayoutAttributeTrailing:   @"0"}];
+        [view addSubview:aiv];
+        aiv.center = CGPointMake(view.bounds.size.width / 2, view.bounds.size.height / 2);
+        
         _paginationView = view;
     }
     return _paginationView;
@@ -157,7 +149,6 @@
         self.paginationIsLoadingNextPage == NO &&
         [self contentOffsetYAtBottom:contentOffsetY]) {
         
-        VBLog(@"YES");
         if ([self.delegate respondsToSelector:@selector(tableViewDidScrollToNextPage:)]) {
             [self.delegate tableViewDidScrollToNextPage:self.tableView];
         }
@@ -169,8 +160,8 @@
     return bottomOffset <= (screenHeight / 4.0f);
 }
 
+#pragma mark - UITableViewDelegate
 - (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-//    VBLog(@"");
     [self paginationOffsetCheck:scrollView.contentOffset.y];
     
     if ([self.delegate respondsToSelector:@selector(scrollViewDidEndDecelerating:)]) {
@@ -180,9 +171,8 @@
 
 - (void) scrollViewDidEndDragging:(UIScrollView *)scrollView
                    willDecelerate:(BOOL)decelerate {
-//    VBLog(@"");
     [self paginationOffsetCheck:scrollView.contentOffset.y];
-
+    
     if ([self.delegate respondsToSelector:@selector(scrollViewDidEndDragging:willDecelerate:)]) {
         [self.delegate scrollViewDidEndDragging:scrollView
                                  willDecelerate:decelerate];
@@ -192,115 +182,12 @@
 - (void) scrollViewWillEndDragging:(UIScrollView *)scrollView
                       withVelocity:(CGPoint)velocity
                targetContentOffset:(inout CGPoint *)targetContentOffset {
-//    VBLog(@"");
     [self paginationOffsetCheck:targetContentOffset->y];
-
+    
     if ([self.delegate respondsToSelector:@selector(scrollViewWillEndDragging:withVelocity:targetContentOffset:)]) {
         [self.delegate scrollViewWillEndDragging:scrollView
                                     withVelocity:velocity
                              targetContentOffset:targetContentOffset];
-    }
-}
-
-#pragma mark - UITableViewDataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    if ([self.datasource respondsToSelector:@selector(numberOfSectionsInTableView:)]) {
-        return [self.datasource numberOfSectionsInTableView:tableView];
-    }else{
-        return 1;
-
-    }
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.datasource tableView:tableView
-                numberOfRowsInSection:section];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.datasource tableView:tableView
-                cellForRowAtIndexPath:indexPath];
-}
-
-#pragma mark - UITableViewDelegate
-#pragma mark height
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if ([self.delegate respondsToSelector:@selector(tableView:estimatedHeightForRowAtIndexPath:)]) {
-        return [self.delegate tableView:tableView estimatedHeightForRowAtIndexPath:indexPath];
-    }else{
-        return UITableViewAutomaticDimension;
-    }
-}
-
-#pragma mark selection
-- (NSIndexPath *) tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.delegate respondsToSelector:@selector(tableView:willSelectRowAtIndexPath:)]) {
-        return [self.delegate tableView:tableView willSelectRowAtIndexPath:indexPath];
-    }else{
-        return indexPath;
-    }
-}
-
-- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
-        [self.delegate tableView:tableView didSelectRowAtIndexPath:indexPath];
-    }
-}
-
-- (NSIndexPath *) tableView:(UITableView *)tableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.delegate respondsToSelector:@selector(tableView:willDeselectRowAtIndexPath:)]) {
-        return [self.delegate tableView:tableView willDeselectRowAtIndexPath:indexPath];
-    }else{
-        return indexPath;
-    }
-}
-
-- (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.delegate respondsToSelector:@selector(tableView:didDeselectRowAtIndexPath:)]) {
-        [self.delegate tableView:tableView didDeselectRowAtIndexPath:indexPath];
-    }
-}
-
-#pragma mark header/footer
-- (CGFloat) tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
-    if ([self.delegate respondsToSelector:@selector(tableView:estimatedHeightForHeaderInSection:)]) {
-        return [self.delegate tableView:tableView estimatedHeightForHeaderInSection:section];
-    }else{
-        return UITableViewAutomaticDimension;
-    }
-}
-- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    if ([self.delegate respondsToSelector:@selector(tableView:viewForHeaderInSection:)]) {
-        return [self.delegate tableView:tableView viewForHeaderInSection:section];
-    }else{
-        return nil;
-    }
-}
-
-- (CGFloat) tableView:(UITableView *)tableView estimatedHeightForFooterInSection:(NSInteger)section {
-    if ([self.delegate respondsToSelector:@selector(tableView:estimatedHeightForFooterInSection:)]) {
-        return [self.delegate tableView:tableView estimatedHeightForFooterInSection:section];
-    }else{
-        return UITableViewAutomaticDimension;
-    }
-}
-- (UIView *) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    if ([self.delegate respondsToSelector:@selector(tableView:viewForFooterInSection:)]) {
-        return [self.delegate tableView:tableView viewForFooterInSection:section];
-    }else{
-        return nil;
-    }
-}
-
-#pragma mark display
-- (void) tableView:(UITableView *)tableView
-   willDisplayCell:(UITableViewCell *)cell
- forRowAtIndexPath:(NSIndexPath *)indexPath {
- 
-    if ([self.delegate respondsToSelector:@selector(tableView:willDisplayCell:forRowAtIndexPath:)]) {
-        [self.delegate tableView:tableView
-                 willDisplayCell:cell
-               forRowAtIndexPath:indexPath];
     }
 }
 
