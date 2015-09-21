@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "VBTableViewController"
   s.description      = <<-DESC
-VBTableViewController is a subclass
+VBTableViewController extends UITableViewController by adding pagination, pull-to-refresh and other useful features.
                        DESC
   s.homepage         = "https://github.com/valnoc/VBTableViewController"
   s.license          = 'MIT'
