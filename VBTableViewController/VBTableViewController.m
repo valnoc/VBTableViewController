@@ -28,6 +28,8 @@
 
 @interface VBTableViewController ()
 
+@property (nonatomic, strong) WZProtocolInterceptor* delegateInterceptor;
+
 @property (nonatomic, strong) UIView* paginationView;
 @property (nonatomic, strong) UIView* prePaginationFooterView;
 
@@ -55,11 +57,11 @@
 - (void) setDelegate:(id<VBTableViewDelegate>)delegate {
     _delegate = delegate;
     
-    WZProtocolInterceptor* interceptor = [[WZProtocolInterceptor alloc] initWithInterceptedProtocol:@protocol(VBTableViewDelegate)];
-    interceptor.middleMan = self;
-    interceptor.receiver = delegate;
+    self.delegateInterceptor = [[WZProtocolInterceptor alloc] initWithInterceptedProtocol:@protocol(VBTableViewDelegate)];
+    self.delegateInterceptor.middleMan = self;
+    self.delegateInterceptor.receiver = delegate;
     
-    self.tableView.delegate = (id<UITableViewDelegate>)interceptor;
+    self.tableView.delegate = (id<UITableViewDelegate>)self.delegateInterceptor;
 }
 
 #pragma mark - table
