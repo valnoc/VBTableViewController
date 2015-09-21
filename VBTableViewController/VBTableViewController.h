@@ -36,25 +36,58 @@
 
 @end
 
+/**
+ *  VBTableViewController extends UITableViewController by adding pagination, pull-to-refresh and other useful features.
+ */
 @interface VBTableViewController : UITableViewController
 
+/**
+ * Use this dataSource property instead of tableView.dataSource
+ */
 @property (nonatomic, weak) id<VBTableViewDataSource> dataSource;
+/**
+ * Use this delegate property instead of tableView.delegate
+ */
 @property (nonatomic, weak) id<VBTableViewDelegate> delegate;
 
 #pragma mark - table
+/**
+ * Reload visible rows animated
+ */
 - (void) reloadVisibleCells;
+/**
+ * Change the height of tableView.tableHeaderView using constraints. This is done automatically only for section headers.
+ */
 - (void) fitTableHeaderView;
 
 #pragma mark - pagination
+/**
+ * If pagination is enabled, activity indicator will be used as tableFooterView. Delegate will be notified with <i>-tableViewDidScrollToNextPage:</i>
+ */
 @property (nonatomic, assign) BOOL paginationEnabled;
+/**
+ * Setting this property to YES blocks delegate calls, but do not hide activity indicator.
+ */
 @property (nonatomic, assign) BOOL paginationIsLoadingNextPage;
 
 #pragma mark - pullToRefresh
+/**
+ * If pullToRefresh is enabled, the standard UIRefreshControl is used as self.refreshControl.
+ */
 @property (nonatomic, assign) BOOL pullToRefreshEnabled;
+/**
+ * Updates the refreshControl state.
+ */
 - (void) beginPullToRefresh;
+/**
+ * Updates the refreshControl state.
+ */
 - (void) endPullToRefresh;
 
 #pragma mark - empty cells
+/**
+ * if NO (<b>by default</b>), hides empty cells. Useful with tableView plain style.
+ */
 @property (nonatomic, assign) BOOL showEmptyCells;
 
 @end
