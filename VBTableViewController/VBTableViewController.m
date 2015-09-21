@@ -22,8 +22,9 @@
 //    SOFTWARE.
 //
 
-
 #import "VBTableViewController.h"
+
+#import <WZProtocolInterceptor/WZProtocolInterceptor.h>
 
 @interface VBTableViewController ()
 
@@ -53,7 +54,12 @@
 }
 - (void) setDelegate:(id<VBTableViewDelegate>)delegate {
     _delegate = delegate;
-    self.tableView.delegate = delegate;
+    
+    WZProtocolInterceptor* interceptor = [[WZProtocolInterceptor alloc] initWithInterceptedProtocol:@protocol(VBTableViewDelegate)];
+    interceptor.middleMan = self;
+    interceptor.receiver = delegate;
+    
+    self.tableView.delegate = (id<UITableViewDelegate>)interceptor;
 }
 
 #pragma mark - table
