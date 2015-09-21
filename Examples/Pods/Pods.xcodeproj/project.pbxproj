@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E3FC55C92D55FE3A9054D86E6578DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A6C9D2CE5BA698B36D9C10B9D43107 /* Foundation.framework */; };
+		93D117B541054AECA09F62ED07FB785A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 130B27A8C07CE470CC1E8A2060DEC0A8 /* ReplaceMe.m */; };
+		9D6D1C289A7AF21E00CDE0ABD0D34654 /* WZProtocolInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0684B2326CE38FBE7740BF90C7DB662D /* WZProtocolInterceptor.h */; };
+		A05DA06C70461C35DD796C6A661B07BF /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A42902DB8610A722D128819008D7C300 /* Pods-dummy.m */; };
+		B5AFFA8BE066AD6FA0D94C8F372F5983 /* WZProtocolInterceptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D10D7DDDCE4FF89B2A0F73598EFAB /* WZProtocolInterceptor-dummy.m */; };
+		DAFA567989E319F557E532105F359DB7 /* WZProtocolInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6862C3E0952E4D170F52B1CB296EF3 /* WZProtocolInterceptor.m */; };
+		E156DE3589EAACA334A8843B04F4827B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A6C9D2CE5BA698B36D9C10B9D43107 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD077FE3B0B084B9A30BA0C7249F4F83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15A2E111150A70E74057C1A7324948C6;
+			remoteInfo = WZProtocolInterceptor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0684B2326CE38FBE7740BF90C7DB662D /* WZProtocolInterceptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WZProtocolInterceptor.h; path = Pod/Classes/WZProtocolInterceptor.h; sourceTree = "<group>"; };
+		06A6C9D2CE5BA698B36D9C10B9D43107 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		06CDD4D21BDBB3AA3036A3E69C7DA6F7 /* WZProtocolInterceptor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WZProtocolInterceptor-Private.xcconfig"; sourceTree = "<group>"; };
+		130B27A8C07CE470CC1E8A2060DEC0A8 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Pod/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1DB28CDD0481E9AC58D57B0C8F347C7C /* WZProtocolInterceptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZProtocolInterceptor.xcconfig; sourceTree = "<group>"; };
+		303E06E60FE6E577F9CAFA2CAE25D110 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		460388DD532FE7BBE4F159514AB8BF44 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		7B49754781E4E3AD3BB10150501004E1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		840D6B78FE7E993D2296199EA1538451 /* libWZProtocolInterceptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWZProtocolInterceptor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		956D10D7DDDCE4FF89B2A0F73598EFAB /* WZProtocolInterceptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZProtocolInterceptor-dummy.m"; sourceTree = "<group>"; };
+		A42902DB8610A722D128819008D7C300 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		AB6862C3E0952E4D170F52B1CB296EF3 /* WZProtocolInterceptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WZProtocolInterceptor.m; path = Pod/Classes/WZProtocolInterceptor.m; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		C70657611EBE386CAA1AD5427A3A364F /* WZProtocolInterceptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZProtocolInterceptor-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60053F6350A2DE24D1C64E77BC840F2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3FC55C92D55FE3A9054D86E6578DA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965B531FB2AB7A87711FD5B595BE6094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E156DE3589EAACA334A8843B04F4827B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38FDE8EA83A2627B43C9A7F52ABF5211 /* WZProtocolInterceptor */ = {
+			isa = PBXGroup;
+			children = (
+				130B27A8C07CE470CC1E8A2060DEC0A8 /* ReplaceMe.m */,
+				0684B2326CE38FBE7740BF90C7DB662D /* WZProtocolInterceptor.h */,
+				AB6862C3E0952E4D170F52B1CB296EF3 /* WZProtocolInterceptor.m */,
+				ECFA279DAD3D2A2B65CA8A377737F0C2 /* Support Files */,
+			);
+			path = WZProtocolInterceptor;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				06A6C9D2CE5BA698B36D9C10B9D43107 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F8781FDC98BCD86AEF408AF2207F180E /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
+				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
+				A42902DB8610A722D128819008D7C300 /* Pods-dummy.m */,
+				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
+				303E06E60FE6E577F9CAFA2CAE25D110 /* Pods.debug.xcconfig */,
+				460388DD532FE7BBE4F159514AB8BF44 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B49754781E4E3AD3BB10150501004E1 /* libPods.a */,
+				840D6B78FE7E993D2296199EA1538451 /* libWZProtocolInterceptor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ECFA279DAD3D2A2B65CA8A377737F0C2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DB28CDD0481E9AC58D57B0C8F347C7C /* WZProtocolInterceptor.xcconfig */,
+				06CDD4D21BDBB3AA3036A3E69C7DA6F7 /* WZProtocolInterceptor-Private.xcconfig */,
+				956D10D7DDDCE4FF89B2A0F73598EFAB /* WZProtocolInterceptor-dummy.m */,
+				C70657611EBE386CAA1AD5427A3A364F /* WZProtocolInterceptor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WZProtocolInterceptor";
+			sourceTree = "<group>";
+		};
+		F8781FDC98BCD86AEF408AF2207F180E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38FDE8EA83A2627B43C9A7F52ABF5211 /* WZProtocolInterceptor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A6EDA821477101DBB495DDFF79B4605 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6D1C289A7AF21E00CDE0ABD0D34654 /* WZProtocolInterceptor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14ED121530F6651008BB00C41EA86D9A /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B7247E53717A03B69EF3B2AD73BC5F3 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				5003A7167F6F247996C926FA7E7CEDC5 /* Sources */,
+				60053F6350A2DE24D1C64E77BC840F2E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E9340C2D9D0D96FFD951FD392E065D4 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 7B49754781E4E3AD3BB10150501004E1 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		15A2E111150A70E74057C1A7324948C6 /* WZProtocolInterceptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EC7BE8D0027C800627DC67CC3F70142 /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */;
+			buildPhases = (
+				7C12C7B2D92F7B509057EC5FD0AE1EB5 /* Sources */,
+				965B531FB2AB7A87711FD5B595BE6094 /* Frameworks */,
+				3A6EDA821477101DBB495DDFF79B4605 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WZProtocolInterceptor;
+			productName = WZProtocolInterceptor;
+			productReference = 840D6B78FE7E993D2296199EA1538451 /* libWZProtocolInterceptor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14ED121530F6651008BB00C41EA86D9A /* Pods */,
+				15A2E111150A70E74057C1A7324948C6 /* WZProtocolInterceptor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5003A7167F6F247996C926FA7E7CEDC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05DA06C70461C35DD796C6A661B07BF /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C12C7B2D92F7B509057EC5FD0AE1EB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D117B541054AECA09F62ED07FB785A /* ReplaceMe.m in Sources */,
+				B5AFFA8BE066AD6FA0D94C8F372F5983 /* WZProtocolInterceptor-dummy.m in Sources */,
+				DAFA567989E319F557E532105F359DB7 /* WZProtocolInterceptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E9340C2D9D0D96FFD951FD392E065D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WZProtocolInterceptor;
+			target = 15A2E111150A70E74057C1A7324948C6 /* WZProtocolInterceptor */;
+			targetProxy = BD077FE3B0B084B9A30BA0C7249F4F83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3294848125421F1C8C0F311BD79FAA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CDD4D21BDBB3AA3036A3E69C7DA6F7 /* WZProtocolInterceptor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		39DB960E8559DE3E2088E08C3460B245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 303E06E60FE6E577F9CAFA2CAE25D110 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		511103F7F15A7E8F83B268EA03462CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B8D44A224A90B781B2E0BA8D50FD603E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CDD4D21BDBB3AA3036A3E69C7DA6F7 /* WZProtocolInterceptor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BCD7B97B2A2B62E59BDFE66CEEE0CD6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460388DD532FE7BBE4F159514AB8BF44 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */,
+				511103F7F15A7E8F83B268EA03462CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B7247E53717A03B69EF3B2AD73BC5F3 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39DB960E8559DE3E2088E08C3460B245 /* Debug */,
+				BCD7B97B2A2B62E59BDFE66CEEE0CD6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EC7BE8D0027C800627DC67CC3F70142 /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3294848125421F1C8C0F311BD79FAA68 /* Debug */,
+				B8D44A224A90B781B2E0BA8D50FD603E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

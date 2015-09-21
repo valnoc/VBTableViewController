@@ -1,0 +1,10 @@
+PODS:
+  - WZProtocolInterceptor (0.1.0)
+
+DEPENDENCIES:
+  - WZProtocolInterceptor (~> 0.1)
+
+SPEC CHECKSUMS:
+  WZProtocolInterceptor: 56c395e4b3323140421eba99546be362aabc041e
+
+COCOAPODS: 0.38.2
