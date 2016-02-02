@@ -24,8 +24,8 @@
 
 #import "VBTableViewItemCell.h"
 
-#import <VBAutolayout.h>
-#import <VBInvalidClassException.h>
+#import "VBAutolayout.h"
+#import "VBInvalidClassException.h"
 
 @interface VBTableViewItemCell ()
 

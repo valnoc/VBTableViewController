@@ -20,10 +20,10 @@ VBTableViewCell and VBTableViewItemCell implement useful cell methods.
   s.author           = { "Valeriy Bezuglyy" => "valnocorner@gmail.com" }
   s.source           = { :git => "https://github.com/valnoc/VBTableViewController.git", :tag => "v#{s.version}" }
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '8.1'
   s.requires_arc = true
 
-  s.source_files = 'VBTableViewController/**/*'
+  s.source_files = 'VBTableViewController/**/*{.h,.m}'
 
   s.dependency 'WZProtocolInterceptor', '~> 0.1'
   s.dependency 'VBException', '~> 1.0'

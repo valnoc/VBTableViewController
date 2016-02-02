@@ -24,7 +24,7 @@
 
 #import "VBTableViewCell.h"
 
-#import <UIKit+VBProgrammaticCreation.h>
+#import "UIKit+VBProgrammaticCreation.h"
 
 @implementation VBTableViewCell
 
