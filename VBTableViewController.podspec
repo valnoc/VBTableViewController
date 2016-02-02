@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.summary          = "VBTableViewController"
   s.description      = <<-DESC
 VBTableViewController extends UITableViewController by adding pagination, pull-to-refresh and other useful features.
+VBTableViewCell and VBTableViewItemCell implement useful cell methods.
                        DESC
   s.homepage         = "https://github.com/valnoc/VBTableViewController"
   s.license          = 'MIT'
