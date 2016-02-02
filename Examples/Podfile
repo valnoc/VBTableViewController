@@ -1,3 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'WZProtocolInterceptor', '~> 0.1'
+
+pod 'VBException', '~> 1.0'
+
+pod 'VBAutolayout', '~> 2.0'
+pod 'UIKit+VBProgrammaticCreation', '~> 1.0'

@@ -1,10 +1,23 @@
 PODS:
+  - UIButton+BackgroundColor (0.1)
+  - UIKit+VBProgrammaticCreation (1.0.0):
+    - UIButton+BackgroundColor (~> 0.1)
+    - VBException (~> 1.0)
+  - VBAutolayout (2.0.0)
+  - VBException (1.0.2)
   - WZProtocolInterceptor (0.1.0)
 
 DEPENDENCIES:
+  - UIKit+VBProgrammaticCreation (~> 1.0)
+  - VBAutolayout (~> 2.0)
+  - VBException (~> 1.0)
   - WZProtocolInterceptor (~> 0.1)
 
 SPEC CHECKSUMS:
+  UIButton+BackgroundColor: 86e9b059712698911b504fc1ab1d235627e28aed
+  UIKit+VBProgrammaticCreation: 4d4359f68e48673bf7c42590480a8582aa57e5a7
+  VBAutolayout: cbf12f615787be0e77214a8fe6e13ceb705d8bfd
+  VBException: 1abf3b12c3517fec088cfa1915d7a5395d6deb51
   WZProtocolInterceptor: 56c395e4b3323140421eba99546be362aabc041e
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

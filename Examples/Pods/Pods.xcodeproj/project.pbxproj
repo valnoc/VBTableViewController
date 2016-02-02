@@ -7,82 +7,311 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E3FC55C92D55FE3A9054D86E6578DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A6C9D2CE5BA698B36D9C10B9D43107 /* Foundation.framework */; };
-		93D117B541054AECA09F62ED07FB785A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 130B27A8C07CE470CC1E8A2060DEC0A8 /* ReplaceMe.m */; };
-		9D6D1C289A7AF21E00CDE0ABD0D34654 /* WZProtocolInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0684B2326CE38FBE7740BF90C7DB662D /* WZProtocolInterceptor.h */; };
-		A05DA06C70461C35DD796C6A661B07BF /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A42902DB8610A722D128819008D7C300 /* Pods-dummy.m */; };
-		B5AFFA8BE066AD6FA0D94C8F372F5983 /* WZProtocolInterceptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D10D7DDDCE4FF89B2A0F73598EFAB /* WZProtocolInterceptor-dummy.m */; };
-		DAFA567989E319F557E532105F359DB7 /* WZProtocolInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6862C3E0952E4D170F52B1CB296EF3 /* WZProtocolInterceptor.m */; };
-		E156DE3589EAACA334A8843B04F4827B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A6C9D2CE5BA698B36D9C10B9D43107 /* Foundation.framework */; };
+		0404494B303224DDB5312DB8B04792E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		082E1CDC8917E8703CABDA9B5F222471 /* VBNotImplementedException.h in Headers */ = {isa = PBXBuildFile; fileRef = 5860B588DEFEAD00DE0FE8BC9FF4E67D /* VBNotImplementedException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09505975359D561F2413026D5906DF15 /* UIBarButtonItem+VBProgrammaticCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4303D3B850010AC2FF279EDC537C4647 /* UIBarButtonItem+VBProgrammaticCreation.m */; };
+		19E43A64DE1211B5FCA6F642429B2052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		1DE2FC9A540893E8066545C93BD170A3 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADB28271B45536E3E88D6E47D7D0173 /* UIImage+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23711A480AAC2944FA05B5C3F6D9F2F8 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		250F1CC104A978487795435774385986 /* VBInvalidClassException.m in Sources */ = {isa = PBXBuildFile; fileRef = 32136F28540FE7D33EE8373FE625AEAD /* VBInvalidClassException.m */; };
+		28884AB62D70F3094393D2493D644E3B /* UIView+VBAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DD994FE1F4003F41798D5A42F4B57E89 /* UIView+VBAutolayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30BA2D03076E4BC2B4DEC5A15DE94E26 /* UIView+VBProgrammaticCreation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FC299EFA55D0F63B923811A919CE /* UIView+VBProgrammaticCreation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C66DA0B6A875821E31ADC9F0D42CB1C /* VBException-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFC965AF0F13BEE468AF9E566D5E639 /* VBException-dummy.m */; };
+		44C54D99D8556FE1BE74B39BF8A3FAC0 /* VBAutolayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C585C6C5F5B3FFBC7147E87547A8A832 /* VBAutolayout-dummy.m */; };
+		46989D62ADE5ACD152316265EBD76178 /* UIView+VBAutolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 87390271627D05B89A2953844C390BED /* UIView+VBAutolayout.m */; };
+		4B87BB88420951FAFD9C800C8060023F /* VBNotImplementedException.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C981CDA675953CFF19923A1707AC /* VBNotImplementedException.m */; };
+		5189338531405D81AFFA70353AE8C50F /* UIKit+VBProgrammaticCreation.h in Headers */ = {isa = PBXBuildFile; fileRef = D9136EF31B6A413262CD6AB22ED50EE5 /* UIKit+VBProgrammaticCreation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D1258027FBC77B18C2FFE7FCD3D420F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		62BE832BD95E5C47419DC470F72CA799 /* VBException.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9F9E687AAD48AB440DC6F678B35D4C /* VBException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A22F9B23E7B34DB7F9C8B389A84AA02 /* NSLayoutConstraint+VBAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C07B0B07184383F249DF0127E38AC3AC /* NSLayoutConstraint+VBAutolayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B33722F50B3C8965B5772F183866275 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		6B400A45D9AF48CD3217E39396D28BD0 /* UIBarButtonItem+VBProgrammaticCreation.h in Headers */ = {isa = PBXBuildFile; fileRef = B882251C7E2A26FB6E364EF0337796F6 /* UIBarButtonItem+VBProgrammaticCreation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		774CDEE4C3329551CA0B0AF042947330 /* UIButton+VBProgrammaticCreation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5BCBB2069B9FC9CC698272592B9F508 /* UIButton+VBProgrammaticCreation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D41D80283D969ECD51BA344A1D49793 /* VBInvalidClassException.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE7233B8173CFE77757B383F1910FA2 /* VBInvalidClassException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80DD5B05996C39A56BA2F15A9EFED96A /* WZProtocolInterceptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AD0E8AE0969F4638B8A427B195207C /* WZProtocolInterceptor-dummy.m */; };
+		912E2959C043BE5573EB5A74BC214AFA /* UIView+VBProgrammaticCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529F1B899763D1D563C85B151EF805 /* UIView+VBProgrammaticCreation.m */; };
+		9C18ACEBE6A567B7D2FD07448B6DEB01 /* UIKit+VBProgrammaticCreation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CC634B127FC5AD4186D896414497E /* UIKit+VBProgrammaticCreation-dummy.m */; };
+		9CC3F7E4DEFCA5E35B2B2C7558782C7B /* VBNilValueException.m in Sources */ = {isa = PBXBuildFile; fileRef = E94340E6AC8DC5C287D3D48B064F1A23 /* VBNilValueException.m */; };
+		AD1B55D9E52E2410E8314E1040E3CAB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		AD824D0E337E183F9736C12AD65D072F /* UIButton+BackgroundColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2B9CBD0AEB96F162BC4C5956578D2C /* UIButton+BackgroundColor-dummy.m */; };
+		B54BFF5FB9EBCEED47522B66421E0EF4 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB185122974D00D74830BD6B38C92 /* UIButton+BackgroundColor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BDBACEE003BB9502D29673818CC3BD17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		C08A748B42EC167CD50BD68229B6622B /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AE14E761DB93A64B9790F8C288609D /* ReplaceMe.m */; };
+		C48748EDBBDF7ACDB3675A10C5A1FD06 /* WZProtocolInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D962ABFAE39DC6CC5E3D04219F9B36D /* WZProtocolInterceptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4EAA1AC44AC67B7373B1B33602EA0A7 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1736B9A53D527AACC432F6A9B74259 /* UIImage+Color.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CFCA2A4A994C0FCF7AFD44A0B2436AB8 /* WZProtocolInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF53BD0B12997F44EB8E251A381B2FC /* WZProtocolInterceptor.m */; };
+		E148E836B16117C80EB668BEAEEB53DE /* UIButton+BackgroundColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE10C3ED43BA552603420B21EB5A127 /* UIButton+BackgroundColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E17ED96430D7FFFCD4F3265620C9D623 /* UIButton+VBProgrammaticCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC0F64421A9A7A88D345C4EBFCB02D /* UIButton+VBProgrammaticCreation.m */; };
+		E6EC1B6B864B2A60B9A9278572B86040 /* VBException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56F0C444A938253AD9C6EAFD26212 /* VBException.m */; };
+		EEE315B24C969B4F13DAAEB3F9B306B4 /* VBAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 792DE616E14C725A8CCBD218CCF081BC /* VBAutolayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F15B1C536F7663935E9789CB4A2DB25E /* NSLayoutConstraint+VBAutolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 446EA8A2F37B5CF5657DF739BD780808 /* NSLayoutConstraint+VBAutolayout.m */; };
+		F9A827BA3FC633D021BBE7E6F5B84A88 /* VBNilValueException.h in Headers */ = {isa = PBXBuildFile; fileRef = 53F2992870D047462C5BCB78A56D9132 /* VBNilValueException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BD077FE3B0B084B9A30BA0C7249F4F83 /* PBXContainerItemProxy */ = {
+		2EBFE53EF7527BAFB40F53DE6AE25427 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 15A2E111150A70E74057C1A7324948C6;
+			remoteGlobalIDString = 81910A0C39C1A02E1B403A578F8F2F1A;
+			remoteInfo = VBAutolayout;
+		};
+		440883B8BA619A5AE72F6800BBEBE6E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442342C88372F309A00D846077AC67EB;
+			remoteInfo = VBException;
+		};
+		74477C469357FE278B13842F4CDF04A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1466EBBE125B706A397BE31D72C3A8;
 			remoteInfo = WZProtocolInterceptor;
+		};
+		792012DF31E3ADE38F816890842076BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442342C88372F309A00D846077AC67EB;
+			remoteInfo = VBException;
+		};
+		8264990839637D99AE2E0A6D82F5ABAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D0602CE7D5E4FB65758B8C15AC55B2F;
+			remoteInfo = "UIButton+BackgroundColor";
+		};
+		CE6107A4D63EBF12ABD0EB69C9052C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85B0E970F4DB99EC363A45114F375B9F;
+			remoteInfo = "UIKit+VBProgrammaticCreation";
+		};
+		EE55161080B2D5C9881CF4236DBE1C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D0602CE7D5E4FB65758B8C15AC55B2F;
+			remoteInfo = "UIButton+BackgroundColor";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0684B2326CE38FBE7740BF90C7DB662D /* WZProtocolInterceptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WZProtocolInterceptor.h; path = Pod/Classes/WZProtocolInterceptor.h; sourceTree = "<group>"; };
-		06A6C9D2CE5BA698B36D9C10B9D43107 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		06CDD4D21BDBB3AA3036A3E69C7DA6F7 /* WZProtocolInterceptor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WZProtocolInterceptor-Private.xcconfig"; sourceTree = "<group>"; };
-		130B27A8C07CE470CC1E8A2060DEC0A8 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Pod/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1DB28CDD0481E9AC58D57B0C8F347C7C /* WZProtocolInterceptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZProtocolInterceptor.xcconfig; sourceTree = "<group>"; };
-		303E06E60FE6E577F9CAFA2CAE25D110 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		460388DD532FE7BBE4F159514AB8BF44 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		7B49754781E4E3AD3BB10150501004E1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		840D6B78FE7E993D2296199EA1538451 /* libWZProtocolInterceptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWZProtocolInterceptor.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		956D10D7DDDCE4FF89B2A0F73598EFAB /* WZProtocolInterceptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZProtocolInterceptor-dummy.m"; sourceTree = "<group>"; };
-		A42902DB8610A722D128819008D7C300 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		AB6862C3E0952E4D170F52B1CB296EF3 /* WZProtocolInterceptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WZProtocolInterceptor.m; path = Pod/Classes/WZProtocolInterceptor.m; sourceTree = "<group>"; };
+		08AC31BF2DE6E7EFAB838BF5695BF747 /* UIKit+VBProgrammaticCreation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIKit+VBProgrammaticCreation.xcconfig"; sourceTree = "<group>"; };
+		0C205F7489E18D4B68A65829928C63C4 /* libUIKit+VBProgrammaticCreation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUIKit+VBProgrammaticCreation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C68BCDBFA9CE6DEB9EBA5FCD4F375DE /* UIButton+BackgroundColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIButton+BackgroundColor.xcconfig"; sourceTree = "<group>"; };
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		1DE7233B8173CFE77757B383F1910FA2 /* VBInvalidClassException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VBInvalidClassException.h; path = VBException/exceptions/VBInvalidClassException.h; sourceTree = "<group>"; };
+		1E7129D3E5B9FC1F9D11332C12C67649 /* VBException-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VBException-prefix.pch"; sourceTree = "<group>"; };
+		1FB9FC299EFA55D0F63B923811A919CE /* UIView+VBProgrammaticCreation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+VBProgrammaticCreation.h"; path = "UIKit+VBProgrammaticCreation/UIView+VBProgrammaticCreation.h"; sourceTree = "<group>"; };
+		201CC634B127FC5AD4186D896414497E /* UIKit+VBProgrammaticCreation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIKit+VBProgrammaticCreation-dummy.m"; sourceTree = "<group>"; };
+		21F6BEE15A573A2A81CE95D596409364 /* VBException.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VBException.xcconfig; sourceTree = "<group>"; };
+		24E3A8BB78200716D924B357B3A793DF /* libWZProtocolInterceptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWZProtocolInterceptor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		32136F28540FE7D33EE8373FE625AEAD /* VBInvalidClassException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VBInvalidClassException.m; path = VBException/exceptions/VBInvalidClassException.m; sourceTree = "<group>"; };
+		37B7C981CDA675953CFF19923A1707AC /* VBNotImplementedException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VBNotImplementedException.m; path = VBException/exceptions/VBNotImplementedException.m; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3D962ABFAE39DC6CC5E3D04219F9B36D /* WZProtocolInterceptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WZProtocolInterceptor.h; path = Pod/Classes/WZProtocolInterceptor.h; sourceTree = "<group>"; };
+		3DD56F0C444A938253AD9C6EAFD26212 /* VBException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VBException.m; path = VBException/VBException.m; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4303D3B850010AC2FF279EDC537C4647 /* UIBarButtonItem+VBProgrammaticCreation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+VBProgrammaticCreation.m"; path = "UIKit+VBProgrammaticCreation/UIBarButtonItem+VBProgrammaticCreation.m"; sourceTree = "<group>"; };
+		446EA8A2F37B5CF5657DF739BD780808 /* NSLayoutConstraint+VBAutolayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+VBAutolayout.m"; path = "VBAutolayout/NSLayoutConstraint+VBAutolayout.m"; sourceTree = "<group>"; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		53F2992870D047462C5BCB78A56D9132 /* VBNilValueException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VBNilValueException.h; path = VBException/exceptions/VBNilValueException.h; sourceTree = "<group>"; };
+		5860B588DEFEAD00DE0FE8BC9FF4E67D /* VBNotImplementedException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VBNotImplementedException.h; path = VBException/exceptions/VBNotImplementedException.h; sourceTree = "<group>"; };
+		5ADB28271B45536E3E88D6E47D7D0173 /* UIImage+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "UIButton+BackgroundColor/UIImage+Color.h"; sourceTree = "<group>"; };
+		5B139532B591EB85226A5CD3B0BD58BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE10C3ED43BA552603420B21EB5A127 /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+BackgroundColor.h"; path = "UIButton+BackgroundColor/UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
+		61DC0F64421A9A7A88D345C4EBFCB02D /* UIButton+VBProgrammaticCreation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+VBProgrammaticCreation.m"; path = "UIKit+VBProgrammaticCreation/UIButton+VBProgrammaticCreation.m"; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		7836CCE5C6B7A7F0E94B7CB855E1C037 /* WZProtocolInterceptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZProtocolInterceptor.xcconfig; sourceTree = "<group>"; };
+		792DE616E14C725A8CCBD218CCF081BC /* VBAutolayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VBAutolayout.h; path = VBAutolayout/VBAutolayout.h; sourceTree = "<group>"; };
+		7D1736B9A53D527AACC432F6A9B74259 /* UIImage+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "UIButton+BackgroundColor/UIImage+Color.m"; sourceTree = "<group>"; };
+		7F6CA4A1BB79478AD9817E0B4C7FEB12 /* WZProtocolInterceptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZProtocolInterceptor-prefix.pch"; sourceTree = "<group>"; };
+		83A97451358A3F6208DF63383806222C /* libVBException.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVBException.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		858CB185122974D00D74830BD6B38C92 /* UIButton+BackgroundColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+BackgroundColor.m"; path = "UIButton+BackgroundColor/UIButton+BackgroundColor.m"; sourceTree = "<group>"; };
+		87390271627D05B89A2953844C390BED /* UIView+VBAutolayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+VBAutolayout.m"; path = "VBAutolayout/UIView+VBAutolayout.m"; sourceTree = "<group>"; };
+		8BF53BD0B12997F44EB8E251A381B2FC /* WZProtocolInterceptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WZProtocolInterceptor.m; path = Pod/Classes/WZProtocolInterceptor.m; sourceTree = "<group>"; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		9E59F1E1641C23D8EA7E2B37EFBEA649 /* libUIButton+BackgroundColor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUIButton+BackgroundColor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A62C8DD68F70C51C5654BF8F5409A439 /* VBAutolayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VBAutolayout.xcconfig; sourceTree = "<group>"; };
+		AB529F1B899763D1D563C85B151EF805 /* UIView+VBProgrammaticCreation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+VBProgrammaticCreation.m"; path = "UIKit+VBProgrammaticCreation/UIView+VBProgrammaticCreation.m"; sourceTree = "<group>"; };
+		AD2B9CBD0AEB96F162BC4C5956578D2C /* UIButton+BackgroundColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColor-dummy.m"; sourceTree = "<group>"; };
+		B882251C7E2A26FB6E364EF0337796F6 /* UIBarButtonItem+VBProgrammaticCreation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+VBProgrammaticCreation.h"; path = "UIKit+VBProgrammaticCreation/UIBarButtonItem+VBProgrammaticCreation.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		C70657611EBE386CAA1AD5427A3A364F /* WZProtocolInterceptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZProtocolInterceptor-prefix.pch"; sourceTree = "<group>"; };
+		BC747E547C2774BBFD8D319C89AB074F /* libVBAutolayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVBAutolayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07B0B07184383F249DF0127E38AC3AC /* NSLayoutConstraint+VBAutolayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+VBAutolayout.h"; path = "VBAutolayout/NSLayoutConstraint+VBAutolayout.h"; sourceTree = "<group>"; };
+		C585C6C5F5B3FFBC7147E87547A8A832 /* VBAutolayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VBAutolayout-dummy.m"; sourceTree = "<group>"; };
+		D9136EF31B6A413262CD6AB22ED50EE5 /* UIKit+VBProgrammaticCreation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+VBProgrammaticCreation.h"; path = "UIKit+VBProgrammaticCreation/UIKit+VBProgrammaticCreation.h"; sourceTree = "<group>"; };
+		DB4A8F6412EE537289274C8095FE7952 /* UIButton+BackgroundColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor-prefix.pch"; sourceTree = "<group>"; };
+		DD994FE1F4003F41798D5A42F4B57E89 /* UIView+VBAutolayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+VBAutolayout.h"; path = "VBAutolayout/UIView+VBAutolayout.h"; sourceTree = "<group>"; };
+		DF9F9E687AAD48AB440DC6F678B35D4C /* VBException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VBException.h; path = VBException/VBException.h; sourceTree = "<group>"; };
+		E2AE14E761DB93A64B9790F8C288609D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = Pod/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		E94340E6AC8DC5C287D3D48B064F1A23 /* VBNilValueException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VBNilValueException.m; path = VBException/exceptions/VBNilValueException.m; sourceTree = "<group>"; };
+		EAB52CF247A5FBE31ABFC2408BF30E02 /* VBAutolayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VBAutolayout-prefix.pch"; sourceTree = "<group>"; };
+		EAFC965AF0F13BEE468AF9E566D5E639 /* VBException-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VBException-dummy.m"; sourceTree = "<group>"; };
+		F3A1EA7425C821A2409640A431D2BB46 /* UIKit+VBProgrammaticCreation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIKit+VBProgrammaticCreation-prefix.pch"; sourceTree = "<group>"; };
+		F5BCBB2069B9FC9CC698272592B9F508 /* UIButton+VBProgrammaticCreation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+VBProgrammaticCreation.h"; path = "UIKit+VBProgrammaticCreation/UIButton+VBProgrammaticCreation.h"; sourceTree = "<group>"; };
+		F8AD0E8AE0969F4638B8A427B195207C /* WZProtocolInterceptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZProtocolInterceptor-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		60053F6350A2DE24D1C64E77BC840F2E /* Frameworks */ = {
+		0D0D033D588B6FDD88E5E7AB4C65E29E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E3FC55C92D55FE3A9054D86E6578DA8 /* Foundation.framework in Frameworks */,
+				0404494B303224DDB5312DB8B04792E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		965B531FB2AB7A87711FD5B595BE6094 /* Frameworks */ = {
+		3BE88E1DB1D29FC78AA44F2E5DAB3CC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E156DE3589EAACA334A8843B04F4827B /* Foundation.framework in Frameworks */,
+				6B33722F50B3C8965B5772F183866275 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CECFC7ACA40F82B96B08AD2E387322E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1258027FBC77B18C2FFE7FCD3D420F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F4B3678694F3BEDF79D13014462AF1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E43A64DE1211B5FCA6F642429B2052 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A016877CB9635714840EEF55CD3B4FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1B55D9E52E2410E8314E1040E3CAB2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16E53A1A89449A169C456B1EC5E2297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBACEE003BB9502D29673818CC3BD17 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38FDE8EA83A2627B43C9A7F52ABF5211 /* WZProtocolInterceptor */ = {
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				130B27A8C07CE470CC1E8A2060DEC0A8 /* ReplaceMe.m */,
-				0684B2326CE38FBE7740BF90C7DB662D /* WZProtocolInterceptor.h */,
-				AB6862C3E0952E4D170F52B1CB296EF3 /* WZProtocolInterceptor.m */,
-				ECFA279DAD3D2A2B65CA8A377737F0C2 /* Support Files */,
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0D85A2BD04BE96D53209D33700E785E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21F6BEE15A573A2A81CE95D596409364 /* VBException.xcconfig */,
+				EAFC965AF0F13BEE468AF9E566D5E639 /* VBException-dummy.m */,
+				1E7129D3E5B9FC1F9D11332C12C67649 /* VBException-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VBException";
+			sourceTree = "<group>";
+		};
+		27B0DED74E8BA7EC8E1940C9E99655E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7836CCE5C6B7A7F0E94B7CB855E1C037 /* WZProtocolInterceptor.xcconfig */,
+				F8AD0E8AE0969F4638B8A427B195207C /* WZProtocolInterceptor-dummy.m */,
+				7F6CA4A1BB79478AD9817E0B4C7FEB12 /* WZProtocolInterceptor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WZProtocolInterceptor";
+			sourceTree = "<group>";
+		};
+		2E41613A5A915FEFA3667310350ACEF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B139532B591EB85226A5CD3B0BD58BA /* libPods.a */,
+				9E59F1E1641C23D8EA7E2B37EFBEA649 /* libUIButton+BackgroundColor.a */,
+				0C205F7489E18D4B68A65829928C63C4 /* libUIKit+VBProgrammaticCreation.a */,
+				BC747E547C2774BBFD8D319C89AB074F /* libVBAutolayout.a */,
+				83A97451358A3F6208DF63383806222C /* libVBException.a */,
+				24E3A8BB78200716D924B357B3A793DF /* libWZProtocolInterceptor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4976A808FC00E44FE135DAD34E8D1F75 /* WZProtocolInterceptor */ = {
+			isa = PBXGroup;
+			children = (
+				E2AE14E761DB93A64B9790F8C288609D /* ReplaceMe.m */,
+				3D962ABFAE39DC6CC5E3D04219F9B36D /* WZProtocolInterceptor.h */,
+				8BF53BD0B12997F44EB8E251A381B2FC /* WZProtocolInterceptor.m */,
+				27B0DED74E8BA7EC8E1940C9E99655E6 /* Support Files */,
 			);
 			path = WZProtocolInterceptor;
 			sourceTree = "<group>";
 		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+		517E34573FD7CE8CA31A0E2E676077C3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				06A6C9D2CE5BA698B36D9C10B9D43107 /* Foundation.framework */,
+				77514D22B8E4D69FC587DF82963D366B /* UIButton+BackgroundColor */,
+				AAD62C5ED46A69BF54E7793BFD9959E4 /* UIKit+VBProgrammaticCreation */,
+				7725C8AB3476F76B574A17B8D4FD7358 /* VBAutolayout */,
+				D0DE3BE9E4E88D29DEE740028BCB2AFA /* VBException */,
+				4976A808FC00E44FE135DAD34E8D1F75 /* WZProtocolInterceptor */,
 			);
-			name = iOS;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		54A9764F5C382D0670EC92A7727E2258 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C68BCDBFA9CE6DEB9EBA5FCD4F375DE /* UIButton+BackgroundColor.xcconfig */,
+				AD2B9CBD0AEB96F162BC4C5956578D2C /* UIButton+BackgroundColor-dummy.m */,
+				DB4A8F6412EE537289274C8095FE7952 /* UIButton+BackgroundColor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIButton+BackgroundColor";
+			sourceTree = "<group>";
+		};
+		7725C8AB3476F76B574A17B8D4FD7358 /* VBAutolayout */ = {
+			isa = PBXGroup;
+			children = (
+				C07B0B07184383F249DF0127E38AC3AC /* NSLayoutConstraint+VBAutolayout.h */,
+				446EA8A2F37B5CF5657DF739BD780808 /* NSLayoutConstraint+VBAutolayout.m */,
+				DD994FE1F4003F41798D5A42F4B57E89 /* UIView+VBAutolayout.h */,
+				87390271627D05B89A2953844C390BED /* UIView+VBAutolayout.m */,
+				792DE616E14C725A8CCBD218CCF081BC /* VBAutolayout.h */,
+				81708D00B1EE41C6C23E5F45253EC23A /* Support Files */,
+			);
+			path = VBAutolayout;
+			sourceTree = "<group>";
+		};
+		77514D22B8E4D69FC587DF82963D366B /* UIButton+BackgroundColor */ = {
+			isa = PBXGroup;
+			children = (
+				5BE10C3ED43BA552603420B21EB5A127 /* UIButton+BackgroundColor.h */,
+				858CB185122974D00D74830BD6B38C92 /* UIButton+BackgroundColor.m */,
+				5ADB28271B45536E3E88D6E47D7D0173 /* UIImage+Color.h */,
+				7D1736B9A53D527AACC432F6A9B74259 /* UIImage+Color.m */,
+				54A9764F5C382D0670EC92A7727E2258 /* Support Files */,
+			);
+			path = "UIButton+BackgroundColor";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -90,21 +319,59 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F8781FDC98BCD86AEF408AF2207F180E /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+				517E34573FD7CE8CA31A0E2E676077C3 /* Pods */,
+				2E41613A5A915FEFA3667310350ACEF3 /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+		81708D00B1EE41C6C23E5F45253EC23A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
-				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
-				A42902DB8610A722D128819008D7C300 /* Pods-dummy.m */,
-				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
-				303E06E60FE6E577F9CAFA2CAE25D110 /* Pods.debug.xcconfig */,
-				460388DD532FE7BBE4F159514AB8BF44 /* Pods.release.xcconfig */,
+				A62C8DD68F70C51C5654BF8F5409A439 /* VBAutolayout.xcconfig */,
+				C585C6C5F5B3FFBC7147E87547A8A832 /* VBAutolayout-dummy.m */,
+				EAB52CF247A5FBE31ABFC2408BF30E02 /* VBAutolayout-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VBAutolayout";
+			sourceTree = "<group>";
+		};
+		AAD62C5ED46A69BF54E7793BFD9959E4 /* UIKit+VBProgrammaticCreation */ = {
+			isa = PBXGroup;
+			children = (
+				B882251C7E2A26FB6E364EF0337796F6 /* UIBarButtonItem+VBProgrammaticCreation.h */,
+				4303D3B850010AC2FF279EDC537C4647 /* UIBarButtonItem+VBProgrammaticCreation.m */,
+				F5BCBB2069B9FC9CC698272592B9F508 /* UIButton+VBProgrammaticCreation.h */,
+				61DC0F64421A9A7A88D345C4EBFCB02D /* UIButton+VBProgrammaticCreation.m */,
+				D9136EF31B6A413262CD6AB22ED50EE5 /* UIKit+VBProgrammaticCreation.h */,
+				1FB9FC299EFA55D0F63B923811A919CE /* UIView+VBProgrammaticCreation.h */,
+				AB529F1B899763D1D563C85B151EF805 /* UIView+VBProgrammaticCreation.m */,
+				AC619368E814337C77745BE86F2DFFB5 /* Support Files */,
+			);
+			path = "UIKit+VBProgrammaticCreation";
+			sourceTree = "<group>";
+		};
+		AC619368E814337C77745BE86F2DFFB5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08AC31BF2DE6E7EFAB838BF5695BF747 /* UIKit+VBProgrammaticCreation.xcconfig */,
+				201CC634B127FC5AD4186D896414497E /* UIKit+VBProgrammaticCreation-dummy.m */,
+				F3A1EA7425C821A2409640A431D2BB46 /* UIKit+VBProgrammaticCreation-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIKit+VBProgrammaticCreation";
+			sourceTree = "<group>";
+		};
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
@@ -113,86 +380,97 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7B49754781E4E3AD3BB10150501004E1 /* libPods.a */,
-				840D6B78FE7E993D2296199EA1538451 /* libWZProtocolInterceptor.a */,
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
+		D0DE3BE9E4E88D29DEE740028BCB2AFA /* VBException */ = {
 			isa = PBXGroup;
 			children = (
-				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
+				DF9F9E687AAD48AB440DC6F678B35D4C /* VBException.h */,
+				3DD56F0C444A938253AD9C6EAFD26212 /* VBException.m */,
+				1DE7233B8173CFE77757B383F1910FA2 /* VBInvalidClassException.h */,
+				32136F28540FE7D33EE8373FE625AEAD /* VBInvalidClassException.m */,
+				53F2992870D047462C5BCB78A56D9132 /* VBNilValueException.h */,
+				E94340E6AC8DC5C287D3D48B064F1A23 /* VBNilValueException.m */,
+				5860B588DEFEAD00DE0FE8BC9FF4E67D /* VBNotImplementedException.h */,
+				37B7C981CDA675953CFF19923A1707AC /* VBNotImplementedException.m */,
+				0D85A2BD04BE96D53209D33700E785E6 /* Support Files */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		ECFA279DAD3D2A2B65CA8A377737F0C2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1DB28CDD0481E9AC58D57B0C8F347C7C /* WZProtocolInterceptor.xcconfig */,
-				06CDD4D21BDBB3AA3036A3E69C7DA6F7 /* WZProtocolInterceptor-Private.xcconfig */,
-				956D10D7DDDCE4FF89B2A0F73598EFAB /* WZProtocolInterceptor-dummy.m */,
-				C70657611EBE386CAA1AD5427A3A364F /* WZProtocolInterceptor-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WZProtocolInterceptor";
-			sourceTree = "<group>";
-		};
-		F8781FDC98BCD86AEF408AF2207F180E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				38FDE8EA83A2627B43C9A7F52ABF5211 /* WZProtocolInterceptor */,
-			);
-			name = Pods;
+			path = VBException;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3A6EDA821477101DBB495DDFF79B4605 /* Headers */ = {
+		3F25356BD3025060117D018D2448D59F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6D1C289A7AF21E00CDE0ABD0D34654 /* WZProtocolInterceptor.h in Headers */,
+				E148E836B16117C80EB668BEAEEB53DE /* UIButton+BackgroundColor.h in Headers */,
+				1DE2FC9A540893E8066545C93BD170A3 /* UIImage+Color.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E14024686E5E6611C62F260DFE546F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BE832BD95E5C47419DC470F72CA799 /* VBException.h in Headers */,
+				7D41D80283D969ECD51BA344A1D49793 /* VBInvalidClassException.h in Headers */,
+				F9A827BA3FC633D021BBE7E6F5B84A88 /* VBNilValueException.h in Headers */,
+				082E1CDC8917E8703CABDA9B5F222471 /* VBNotImplementedException.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34DF0B5D0A03374F2401BD954A3B5DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48748EDBBDF7ACDB3675A10C5A1FD06 /* WZProtocolInterceptor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADD203B25267CE60BBF4134929E33BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A22F9B23E7B34DB7F9C8B389A84AA02 /* NSLayoutConstraint+VBAutolayout.h in Headers */,
+				28884AB62D70F3094393D2493D644E3B /* UIView+VBAutolayout.h in Headers */,
+				EEE315B24C969B4F13DAAEB3F9B306B4 /* VBAutolayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25442EB67FFF4315ADE2B90D722A22E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B400A45D9AF48CD3217E39396D28BD0 /* UIBarButtonItem+VBProgrammaticCreation.h in Headers */,
+				774CDEE4C3329551CA0B0AF042947330 /* UIButton+VBProgrammaticCreation.h in Headers */,
+				5189338531405D81AFFA70353AE8C50F /* UIKit+VBProgrammaticCreation.h in Headers */,
+				30BA2D03076E4BC2B4DEC5A15DE94E26 /* UIView+VBProgrammaticCreation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14ED121530F6651008BB00C41EA86D9A /* Pods */ = {
+		1F1466EBBE125B706A397BE31D72C3A8 /* WZProtocolInterceptor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B7247E53717A03B69EF3B2AD73BC5F3 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 05712C8C0BDE09F821A9A6406ED405AB /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */;
 			buildPhases = (
-				5003A7167F6F247996C926FA7E7CEDC5 /* Sources */,
-				60053F6350A2DE24D1C64E77BC840F2E /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E9340C2D9D0D96FFD951FD392E065D4 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 7B49754781E4E3AD3BB10150501004E1 /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		15A2E111150A70E74057C1A7324948C6 /* WZProtocolInterceptor */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6EC7BE8D0027C800627DC67CC3F70142 /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */;
-			buildPhases = (
-				7C12C7B2D92F7B509057EC5FD0AE1EB5 /* Sources */,
-				965B531FB2AB7A87711FD5B595BE6094 /* Frameworks */,
-				3A6EDA821477101DBB495DDFF79B4605 /* Headers */,
+				F52222CE1158ABAE666C7DC7148C7638 /* Sources */,
+				6CECFC7ACA40F82B96B08AD2E387322E /* Frameworks */,
+				A34DF0B5D0A03374F2401BD954A3B5DB /* Headers */,
 			);
 			buildRules = (
 			);
@@ -200,7 +478,98 @@
 			);
 			name = WZProtocolInterceptor;
 			productName = WZProtocolInterceptor;
-			productReference = 840D6B78FE7E993D2296199EA1538451 /* libWZProtocolInterceptor.a */;
+			productReference = 24E3A8BB78200716D924B357B3A793DF /* libWZProtocolInterceptor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		442342C88372F309A00D846077AC67EB /* VBException */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29C823E2B21CB796650F4F8CCE7B560 /* Build configuration list for PBXNativeTarget "VBException" */;
+			buildPhases = (
+				713871A2D21260210C06CE34365CDD44 /* Sources */,
+				A016877CB9635714840EEF55CD3B4FBA /* Frameworks */,
+				8E14024686E5E6611C62F260DFE546F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VBException;
+			productName = VBException;
+			productReference = 83A97451358A3F6208DF63383806222C /* libVBException.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		54FF078A22B0A4E5B60981DED497FEEA /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCE8B292C368C6B07924A14633DE95D /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				D08A14A79F133CBED91BA1C033E452F6 /* Sources */,
+				3BE88E1DB1D29FC78AA44F2E5DAB3CC8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96E68427191B951A37E1A8D6B6B1055F /* PBXTargetDependency */,
+				0B6D98DA6859AF1C096BAF8D9015F18E /* PBXTargetDependency */,
+				5A2D93F42A64811DB40C858C5239E434 /* PBXTargetDependency */,
+				769F84B8D071454BC528BC280C6D292D /* PBXTargetDependency */,
+				33E483516AE155275C103AE780482DBF /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 5B139532B591EB85226A5CD3B0BD58BA /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7D0602CE7D5E4FB65758B8C15AC55B2F /* UIButton+BackgroundColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68C40C4C9AC777A0A7BAB15B1F10AAB /* Build configuration list for PBXNativeTarget "UIButton+BackgroundColor" */;
+			buildPhases = (
+				89EC4E8E9DFE85D5670AC0908B0E68BB /* Sources */,
+				0D0D033D588B6FDD88E5E7AB4C65E29E /* Frameworks */,
+				3F25356BD3025060117D018D2448D59F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIButton+BackgroundColor";
+			productName = "UIButton+BackgroundColor";
+			productReference = 9E59F1E1641C23D8EA7E2B37EFBEA649 /* libUIButton+BackgroundColor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		81910A0C39C1A02E1B403A578F8F2F1A /* VBAutolayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F519BFF4ED69D13F6F0F51C589E5D92E /* Build configuration list for PBXNativeTarget "VBAutolayout" */;
+			buildPhases = (
+				C33417133E696A776C21CD80C03D4F76 /* Sources */,
+				8F4B3678694F3BEDF79D13014462AF1F /* Frameworks */,
+				BADD203B25267CE60BBF4134929E33BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VBAutolayout;
+			productName = VBAutolayout;
+			productReference = BC747E547C2774BBFD8D319C89AB074F /* libVBAutolayout.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		85B0E970F4DB99EC363A45114F375B9F /* UIKit+VBProgrammaticCreation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E8DD0995007C8477839B8C2DB99697 /* Build configuration list for PBXNativeTarget "UIKit+VBProgrammaticCreation" */;
+			buildPhases = (
+				1B385B9E75DACF0ECF1A4BAE871C9DC4 /* Sources */,
+				B16E53A1A89449A169C456B1EC5E2297 /* Frameworks */,
+				C25442EB67FFF4315ADE2B90D722A22E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BE915CB1FFFA7243559C6BB7993A6FD /* PBXTargetDependency */,
+				8A9565C20F7DB8434DB365CD8395C17F /* PBXTargetDependency */,
+			);
+			name = "UIKit+VBProgrammaticCreation";
+			productName = "UIKit+VBProgrammaticCreation";
+			productReference = 0C205F7489E18D4B68A65829928C63C4 /* libUIKit+VBProgrammaticCreation.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -220,69 +589,190 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = 2E41613A5A915FEFA3667310350ACEF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14ED121530F6651008BB00C41EA86D9A /* Pods */,
-				15A2E111150A70E74057C1A7324948C6 /* WZProtocolInterceptor */,
+				54FF078A22B0A4E5B60981DED497FEEA /* Pods */,
+				7D0602CE7D5E4FB65758B8C15AC55B2F /* UIButton+BackgroundColor */,
+				85B0E970F4DB99EC363A45114F375B9F /* UIKit+VBProgrammaticCreation */,
+				81910A0C39C1A02E1B403A578F8F2F1A /* VBAutolayout */,
+				442342C88372F309A00D846077AC67EB /* VBException */,
+				1F1466EBBE125B706A397BE31D72C3A8 /* WZProtocolInterceptor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5003A7167F6F247996C926FA7E7CEDC5 /* Sources */ = {
+		1B385B9E75DACF0ECF1A4BAE871C9DC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A05DA06C70461C35DD796C6A661B07BF /* Pods-dummy.m in Sources */,
+				09505975359D561F2413026D5906DF15 /* UIBarButtonItem+VBProgrammaticCreation.m in Sources */,
+				E17ED96430D7FFFCD4F3265620C9D623 /* UIButton+VBProgrammaticCreation.m in Sources */,
+				9C18ACEBE6A567B7D2FD07448B6DEB01 /* UIKit+VBProgrammaticCreation-dummy.m in Sources */,
+				912E2959C043BE5573EB5A74BC214AFA /* UIView+VBProgrammaticCreation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C12C7B2D92F7B509057EC5FD0AE1EB5 /* Sources */ = {
+		713871A2D21260210C06CE34365CDD44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93D117B541054AECA09F62ED07FB785A /* ReplaceMe.m in Sources */,
-				B5AFFA8BE066AD6FA0D94C8F372F5983 /* WZProtocolInterceptor-dummy.m in Sources */,
-				DAFA567989E319F557E532105F359DB7 /* WZProtocolInterceptor.m in Sources */,
+				3C66DA0B6A875821E31ADC9F0D42CB1C /* VBException-dummy.m in Sources */,
+				E6EC1B6B864B2A60B9A9278572B86040 /* VBException.m in Sources */,
+				250F1CC104A978487795435774385986 /* VBInvalidClassException.m in Sources */,
+				9CC3F7E4DEFCA5E35B2B2C7558782C7B /* VBNilValueException.m in Sources */,
+				4B87BB88420951FAFD9C800C8060023F /* VBNotImplementedException.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EC4E8E9DFE85D5670AC0908B0E68BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD824D0E337E183F9736C12AD65D072F /* UIButton+BackgroundColor-dummy.m in Sources */,
+				B54BFF5FB9EBCEED47522B66421E0EF4 /* UIButton+BackgroundColor.m in Sources */,
+				C4EAA1AC44AC67B7373B1B33602EA0A7 /* UIImage+Color.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C33417133E696A776C21CD80C03D4F76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15B1C536F7663935E9789CB4A2DB25E /* NSLayoutConstraint+VBAutolayout.m in Sources */,
+				46989D62ADE5ACD152316265EBD76178 /* UIView+VBAutolayout.m in Sources */,
+				44C54D99D8556FE1BE74B39BF8A3FAC0 /* VBAutolayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D08A14A79F133CBED91BA1C033E452F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23711A480AAC2944FA05B5C3F6D9F2F8 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52222CE1158ABAE666C7DC7148C7638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08A748B42EC167CD50BD68229B6622B /* ReplaceMe.m in Sources */,
+				80DD5B05996C39A56BA2F15A9EFED96A /* WZProtocolInterceptor-dummy.m in Sources */,
+				CFCA2A4A994C0FCF7AFD44A0B2436AB8 /* WZProtocolInterceptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7E9340C2D9D0D96FFD951FD392E065D4 /* PBXTargetDependency */ = {
+		0B6D98DA6859AF1C096BAF8D9015F18E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIKit+VBProgrammaticCreation";
+			target = 85B0E970F4DB99EC363A45114F375B9F /* UIKit+VBProgrammaticCreation */;
+			targetProxy = CE6107A4D63EBF12ABD0EB69C9052C38 /* PBXContainerItemProxy */;
+		};
+		2BE915CB1FFFA7243559C6BB7993A6FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIButton+BackgroundColor";
+			target = 7D0602CE7D5E4FB65758B8C15AC55B2F /* UIButton+BackgroundColor */;
+			targetProxy = 8264990839637D99AE2E0A6D82F5ABAB /* PBXContainerItemProxy */;
+		};
+		33E483516AE155275C103AE780482DBF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WZProtocolInterceptor;
-			target = 15A2E111150A70E74057C1A7324948C6 /* WZProtocolInterceptor */;
-			targetProxy = BD077FE3B0B084B9A30BA0C7249F4F83 /* PBXContainerItemProxy */;
+			target = 1F1466EBBE125B706A397BE31D72C3A8 /* WZProtocolInterceptor */;
+			targetProxy = 74477C469357FE278B13842F4CDF04A1 /* PBXContainerItemProxy */;
+		};
+		5A2D93F42A64811DB40C858C5239E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VBAutolayout;
+			target = 81910A0C39C1A02E1B403A578F8F2F1A /* VBAutolayout */;
+			targetProxy = 2EBFE53EF7527BAFB40F53DE6AE25427 /* PBXContainerItemProxy */;
+		};
+		769F84B8D071454BC528BC280C6D292D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VBException;
+			target = 442342C88372F309A00D846077AC67EB /* VBException */;
+			targetProxy = 440883B8BA619A5AE72F6800BBEBE6E2 /* PBXContainerItemProxy */;
+		};
+		8A9565C20F7DB8434DB365CD8395C17F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VBException;
+			target = 442342C88372F309A00D846077AC67EB /* VBException */;
+			targetProxy = 792012DF31E3ADE38F816890842076BD /* PBXContainerItemProxy */;
+		};
+		96E68427191B951A37E1A8D6B6B1055F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIButton+BackgroundColor";
+			target = 7D0602CE7D5E4FB65758B8C15AC55B2F /* UIButton+BackgroundColor */;
+			targetProxy = EE55161080B2D5C9881CF4236DBE1C2C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3294848125421F1C8C0F311BD79FAA68 /* Debug */ = {
+		0A1E9F5472127B864E0291B3A0B81872 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06CDD4D21BDBB3AA3036A3E69C7DA6F7 /* WZProtocolInterceptor-Private.xcconfig */;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		231404A4A360CE7D2BB59F7490801457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62C8DD68F70C51C5654BF8F5409A439 /* VBAutolayout.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VBAutolayout/VBAutolayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		39DB960E8559DE3E2088E08C3460B245 /* Debug */ = {
+		2380DA1C1DFE045042B3159F2EC17D25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 303E06E60FE6E577F9CAFA2CAE25D110 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 21F6BEE15A573A2A81CE95D596409364 /* VBException.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				GCC_PREFIX_HEADER = "Target Support Files/VBException/VBException-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84B0B97D2D562D4D1F212DB1BAB016AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -293,41 +783,43 @@
 			};
 			name = Debug;
 		};
-		511103F7F15A7E8F83B268EA03462CAB /* Release */ = {
+		8625FCC01EEF3C644AFD3E9388DEB51A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62C8DD68F70C51C5654BF8F5409A439 /* VBAutolayout.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VBAutolayout/VBAutolayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
+		94219B6CEC1DB0F3C5EC403E1D0BE8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F6BEE15A573A2A81CE95D596409364 /* VBException.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VBException/VBException-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A2A3FCA6599E8034578E80B9179C76CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -359,40 +851,150 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		B8D44A224A90B781B2E0BA8D50FD603E /* Release */ = {
+		A3739B86E20A593F42805A0E035EC50E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06CDD4D21BDBB3AA3036A3E69C7DA6F7 /* WZProtocolInterceptor-Private.xcconfig */;
+			baseConfigurationReference = 0C68BCDBFA9CE6DEB9EBA5FCD4F375DE /* UIButton+BackgroundColor.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				GCC_PREFIX_HEADER = "Target Support Files/UIButton+BackgroundColor/UIButton+BackgroundColor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		BCD7B97B2A2B62E59BDFE66CEEE0CD6F /* Release */ = {
+		A4A6B8A0F40A5EFDFC74C706DE6F45A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 460388DD532FE7BBE4F159514AB8BF44 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 08AC31BF2DE6E7EFAB838BF5695BF747 /* UIKit+VBProgrammaticCreation.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				GCC_PREFIX_HEADER = "Target Support Files/UIKit+VBProgrammaticCreation/UIKit+VBProgrammaticCreation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A8B3E93D468ACECED81FCACE881D020B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C68BCDBFA9CE6DEB9EBA5FCD4F375DE /* UIButton+BackgroundColor.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIButton+BackgroundColor/UIButton+BackgroundColor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB66C978656E240C917407B296597F92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9421E1FD34FC3DE48BB4CD495963F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08AC31BF2DE6E7EFAB838BF5695BF747 /* UIKit+VBProgrammaticCreation.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIKit+VBProgrammaticCreation/UIKit+VBProgrammaticCreation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BDE7A40F3AF4C5CAF54A959E10700503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7836CCE5C6B7A7F0E94B7CB855E1C037 /* WZProtocolInterceptor.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ED223AA6AD752E9DDF003CB37853EFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7836CCE5C6B7A7F0E94B7CB855E1C037 /* WZProtocolInterceptor.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WZProtocolInterceptor/WZProtocolInterceptor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -401,29 +1003,65 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05712C8C0BDE09F821A9A6406ED405AB /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE7A40F3AF4C5CAF54A959E10700503 /* Debug */,
+				ED223AA6AD752E9DDF003CB37853EFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */,
-				511103F7F15A7E8F83B268EA03462CAB /* Release */,
+				A2A3FCA6599E8034578E80B9179C76CD /* Debug */,
+				AB66C978656E240C917407B296597F92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B7247E53717A03B69EF3B2AD73BC5F3 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		37E8DD0995007C8477839B8C2DB99697 /* Build configuration list for PBXNativeTarget "UIKit+VBProgrammaticCreation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39DB960E8559DE3E2088E08C3460B245 /* Debug */,
-				BCD7B97B2A2B62E59BDFE66CEEE0CD6F /* Release */,
+				B9421E1FD34FC3DE48BB4CD495963F8D /* Debug */,
+				A4A6B8A0F40A5EFDFC74C706DE6F45A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6EC7BE8D0027C800627DC67CC3F70142 /* Build configuration list for PBXNativeTarget "WZProtocolInterceptor" */ = {
+		CFCE8B292C368C6B07924A14633DE95D /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3294848125421F1C8C0F311BD79FAA68 /* Debug */,
-				B8D44A224A90B781B2E0BA8D50FD603E /* Release */,
+				84B0B97D2D562D4D1F212DB1BAB016AD /* Debug */,
+				0A1E9F5472127B864E0291B3A0B81872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E29C823E2B21CB796650F4F8CCE7B560 /* Build configuration list for PBXNativeTarget "VBException" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94219B6CEC1DB0F3C5EC403E1D0BE8FE /* Debug */,
+				2380DA1C1DFE045042B3159F2EC17D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F519BFF4ED69D13F6F0F51C589E5D92E /* Build configuration list for PBXNativeTarget "VBAutolayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231404A4A360CE7D2BB59F7490801457 /* Debug */,
+				8625FCC01EEF3C644AFD3E9388DEB51A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F68C40C4C9AC777A0A7BAB15B1F10AAB /* Build configuration list for PBXNativeTarget "UIButton+BackgroundColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8B3E93D468ACECED81FCACE881D020B /* Debug */,
+				A3739B86E20A593F42805A0E035EC50E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

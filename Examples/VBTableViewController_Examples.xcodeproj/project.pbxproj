@@ -16,6 +16,9 @@
 		5BD998B91BAEE66C002B78E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD998B81BAEE66C002B78E5 /* Images.xcassets */; };
 		5BD998BC1BAEE66C002B78E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD998BA1BAEE66C002B78E5 /* LaunchScreen.xib */; };
 		5BD998C81BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD998C71BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.m */; };
+		5BE386B21C6150B100C2CDFD /* VBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE386AD1C6150B100C2CDFD /* VBTableViewCell.m */; };
+		5BE386B31C6150B100C2CDFD /* VBTableViewItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE386AF1C6150B100C2CDFD /* VBTableViewItemCell.m */; };
+		5BE386B41C6150B100C2CDFD /* VBTableViewItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE386B11C6150B100C2CDFD /* VBTableViewItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,12 @@
 		5BD998C11BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBTableViewController_ExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD998C61BAEE66D002B78E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD998C71BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController_ExamplesTests.m; sourceTree = "<group>"; };
+		5BE386AC1C6150B100C2CDFD /* VBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewCell.h; sourceTree = "<group>"; };
+		5BE386AD1C6150B100C2CDFD /* VBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewCell.m; sourceTree = "<group>"; };
+		5BE386AE1C6150B100C2CDFD /* VBTableViewItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewItemCell.h; sourceTree = "<group>"; };
+		5BE386AF1C6150B100C2CDFD /* VBTableViewItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewItemCell.m; sourceTree = "<group>"; };
+		5BE386B01C6150B100C2CDFD /* VBTableViewItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewItemView.h; sourceTree = "<group>"; };
+		5BE386B11C6150B100C2CDFD /* VBTableViewItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewItemView.m; sourceTree = "<group>"; };
 		76E15F7AD6E5848EF5E7CC6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FF143DBABD06D84925AC0F8D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +89,7 @@
 		5B2186CA1BAEFEC100FDD2BD /* VBTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5BE386AB1C6150B100C2CDFD /* cell */,
 				5B2186CB1BAEFEC100FDD2BD /* VBTableViewController.h */,
 				5B2186CC1BAEFEC100FDD2BD /* VBTableViewController.m */,
 			);
@@ -149,6 +159,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5BE386AB1C6150B100C2CDFD /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				5BE386AC1C6150B100C2CDFD /* VBTableViewCell.h */,
+				5BE386AD1C6150B100C2CDFD /* VBTableViewCell.m */,
+				5BE386AE1C6150B100C2CDFD /* VBTableViewItemCell.h */,
+				5BE386AF1C6150B100C2CDFD /* VBTableViewItemCell.m */,
+				5BE386B01C6150B100C2CDFD /* VBTableViewItemView.h */,
+				5BE386B11C6150B100C2CDFD /* VBTableViewItemView.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		C28E342552260280389279C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +192,7 @@
 				5BD998A51BAEE66C002B78E5 /* Frameworks */,
 				5BD998A61BAEE66C002B78E5 /* Resources */,
 				EE17A4E04AF042C0C210B24F /* Copy Pods Resources */,
+				A9FEDB954185E0488CE5C8EB /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +294,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A9FEDB954185E0488CE5C8EB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EE17A4E04AF042C0C210B24F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,7 +331,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE386B21C6150B100C2CDFD /* VBTableViewCell.m in Sources */,
 				5BD998B41BAEE66C002B78E5 /* ViewController.m in Sources */,
+				5BE386B41C6150B100C2CDFD /* VBTableViewItemView.m in Sources */,
+				5BE386B31C6150B100C2CDFD /* VBTableViewItemCell.m in Sources */,
 				5B2186CD1BAEFEC100FDD2BD /* VBTableViewController.m in Sources */,
 				5BD998B11BAEE66C002B78E5 /* AppDelegate.m in Sources */,
 				5BD998AE1BAEE66C002B78E5 /* main.m in Sources */,
