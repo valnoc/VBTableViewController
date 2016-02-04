@@ -22,29 +22,48 @@
 //    SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+#import "VBTableViewHeaderFooterItemView.h"
 
-/**
- *  VBTableViewHeaderFooterView is a base class for table header-footer.
- */
-@interface VBTableViewHeaderFooterView : UITableViewHeaderFooterView
+@implementation VBTableViewHeaderFooterItemView
 
-#pragma mark - reuse identifier
-/**
- *  @return Identifier for reusability.
- */
-+ (nonnull NSString *) reuseIdentifier;
+- (instancetype) init {
+    self = [super init];
+    if (self) {
+        [self setupUI];
+    }
+    return self;
+}
 
-#pragma mark - setup
-/**
- *  Implement in subclass for manual ui constructing.
- */
-- (void) setupUI;
+- (instancetype) initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupUI];
+    }
+    return self;
+}
+
+#pragma mark - item
+- (void) setItem:(id)item {
+    _item = item;
+    
+    [self prepareForReuse];
+    [self updateUI];
+    
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
+#pragma mark - ui
+- (void) setupUI {
+}
+- (void) prepareForReuse {
+}
+- (void) updateUI {
+}
 
 #pragma mark - height
-+ (CGFloat) estimatedHeight;
-
-#pragma mark - color
-@property (nonatomic, strong, nullable) UIColor* selectedBackgroundColor;
++ (CGFloat) estimatedHeightWithItem:(id)item {
+    return 44.0f;
+}
 
 @end
