@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39BAC5332B9046A23DF28845 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA5D20AA5E17817A470D846 /* libPods.a */; };
+		5B0197361C63E132009B16E7 /* VBTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0197351C63E132009B16E7 /* VBTableViewHeaderFooterView.m */; };
 		5B2186CD1BAEFEC100FDD2BD /* VBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2186CC1BAEFEC100FDD2BD /* VBTableViewController.m */; };
 		5BD998AE1BAEE66C002B78E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD998AD1BAEE66C002B78E5 /* main.m */; };
 		5BD998B11BAEE66C002B78E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD998B01BAEE66C002B78E5 /* AppDelegate.m */; };
@@ -33,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		0BA5D20AA5E17817A470D846 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0197341C63E132009B16E7 /* VBTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		5B0197351C63E132009B16E7 /* VBTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewHeaderFooterView.m; sourceTree = "<group>"; };
 		5B2186CB1BAEFEC100FDD2BD /* VBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewController.h; sourceTree = "<group>"; };
 		5B2186CC1BAEFEC100FDD2BD /* VBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController.m; sourceTree = "<group>"; };
 		5BD998A81BAEE66C002B78E5 /* VBTableViewController_Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBTableViewController_Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,9 +89,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5B0197331C63E0DB009B16E7 /* headerFooter */ = {
+			isa = PBXGroup;
+			children = (
+				5B0197341C63E132009B16E7 /* VBTableViewHeaderFooterView.h */,
+				5B0197351C63E132009B16E7 /* VBTableViewHeaderFooterView.m */,
+			);
+			path = headerFooter;
+			sourceTree = "<group>";
+		};
 		5B2186CA1BAEFEC100FDD2BD /* VBTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5B0197331C63E0DB009B16E7 /* headerFooter */,
 				5BE386AB1C6150B100C2CDFD /* cell */,
 				5B2186CB1BAEFEC100FDD2BD /* VBTableViewController.h */,
 				5B2186CC1BAEFEC100FDD2BD /* VBTableViewController.m */,
@@ -337,6 +350,7 @@
 				5BE386B31C6150B100C2CDFD /* VBTableViewItemCell.m in Sources */,
 				5B2186CD1BAEFEC100FDD2BD /* VBTableViewController.m in Sources */,
 				5BD998B11BAEE66C002B78E5 /* AppDelegate.m in Sources */,
+				5B0197361C63E132009B16E7 /* VBTableViewHeaderFooterView.m in Sources */,
 				5BD998AE1BAEE66C002B78E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
