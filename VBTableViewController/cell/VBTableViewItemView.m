@@ -63,7 +63,7 @@
 
 #pragma mark - height
 + (CGFloat) estimatedHeightWithItem:(id)item {
-    return UITableViewAutomaticDimension;
+    return 44.0f;
 }
 
 @end

@@ -70,7 +70,7 @@
 
 #pragma mark - height
 + (CGFloat) estimatedHeight {
-    return UITableViewAutomaticDimension;
+    return 44.0f;
 }
 
 #pragma mark - color
