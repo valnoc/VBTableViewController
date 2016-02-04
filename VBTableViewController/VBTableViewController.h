@@ -63,9 +63,18 @@
 - (void) fitTableHeaderView;
 
 /**
- * A short version of "register class for reuse identifier". Calls +reuseIdetifier if classToRegister is a subclass of VBTableViewCell, else
+ * A short version of "register class for reuse identifier". 
+ * Calls +reuseIdetifier if classToRegister is a subclass of VBTableViewCell.
+ * Else - use stringFromClass as identifier.
  */
 - (void) registerClassForCell:(Class) classToRegister;
+
+/**
+ * A short version of "register class for reuse identifier".
+ * Calls +reuseIdetifier if classToRegister is a subclass of VBTableViewCell.
+ * Else - use stringFromClass as identifier.
+ */
+- (void) registerClassForHeaderFooter:(Class) classToRegister;
 
 #pragma mark - pagination
 /**
