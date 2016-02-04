@@ -26,6 +26,8 @@
 
 #import <WZProtocolInterceptor/WZProtocolInterceptor.h>
 
+#import "VBTableViewCell.h"
+
 @interface VBTableViewController ()
 
 @property (nonatomic, strong) WZProtocolInterceptor* delegateInterceptor;
@@ -81,6 +83,16 @@
     frame.size.height = height;
     header.frame = frame;
     self.tableView.tableHeaderView = header;
+}
+
+- (void) registerClassForCell:(Class) classToRegister {
+    if ([classToRegister isSubclassOfClass:[VBTableViewCell class]]) {
+        [self.tableView registerClass:classToRegister
+               forCellReuseIdentifier:[classToRegister reuseIdentifier]];
+    }else{
+        [self.tableView registerClass:classToRegister
+               forCellReuseIdentifier:NSStringFromClass(classToRegister)];
+    }
 }
 
 #pragma mark - pullToRefresh

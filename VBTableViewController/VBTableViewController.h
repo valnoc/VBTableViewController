@@ -45,6 +45,7 @@
  * Use this dataSource property instead of tableView.dataSource
  */
 @property (nonatomic, weak) id<VBTableViewDataSource> dataSource;
+
 /**
  * Use this delegate property instead of tableView.delegate
  */
@@ -55,16 +56,23 @@
  * Reload visible rows animated
  */
 - (void) reloadVisibleCells;
+
 /**
  * Change the height of tableView.tableHeaderView using constraints. This is done automatically only for section headers.
  */
 - (void) fitTableHeaderView;
+
+/**
+ * A short version of "register class for reuse identifier". Calls +reuseIdetifier if classToRegister is a subclass of VBTableViewCell, else
+ */
+- (void) registerClassForCell:(Class) classToRegister;
 
 #pragma mark - pagination
 /**
  * If pagination is enabled, activity indicator will be used as tableFooterView. Delegate will be notified with <i>-tableViewDidScrollToNextPage:</i>
  */
 @property (nonatomic, assign) BOOL paginationEnabled;
+
 /**
  * Setting this property to YES blocks delegate calls, but do not hide activity indicator.
  */
@@ -75,10 +83,12 @@
  * If pullToRefresh is enabled, the standard UIRefreshControl is used as self.refreshControl.
  */
 @property (nonatomic, assign) BOOL pullToRefreshEnabled;
+
 /**
  * Updates the refreshControl state.
  */
 - (void) beginPullToRefresh;
+
 /**
  * Updates the refreshControl state.
  */
