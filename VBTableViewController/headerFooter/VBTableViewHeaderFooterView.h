@@ -44,7 +44,4 @@
 #pragma mark - height
 + (CGFloat) estimatedHeight;
 
-#pragma mark - color
-@property (nonatomic, strong, nullable) UIColor* selectedBackgroundColor;
-
 @end
