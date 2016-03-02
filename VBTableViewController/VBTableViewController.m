@@ -86,6 +86,12 @@
     self.tableView.tableHeaderView = header;
 }
 
+- (void) registerClassesForCells:(NSArray<Class>*) classesToRegister {
+    __weak typeof(self) __self = self;
+    [classesToRegister enumerateObjectsUsingBlock:^(Class  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [__self registerClassForCell:obj];
+    }];
+}
 - (void) registerClassForCell:(Class) classToRegister {
     if ([classToRegister isSubclassOfClass:[VBTableViewCell class]]) {
         [self.tableView registerClass:classToRegister
@@ -96,6 +102,12 @@
     }
 }
 
+- (void) registerClassesForHeaderFooters:(NSArray<Class>*) classesToRegister {
+    __weak typeof(self) __self = self;
+    [classesToRegister enumerateObjectsUsingBlock:^(Class  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [__self registerClassForHeaderFooter:obj];
+    }];
+}
 - (void) registerClassForHeaderFooter:(Class) classToRegister {
     if ([classToRegister isSubclassOfClass:[VBTableViewHeader class]]) {
         [self.tableView registerClass:classToRegister

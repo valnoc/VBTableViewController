@@ -70,11 +70,21 @@
 - (void) registerClassForCell:(Class) classToRegister;
 
 /**
+ * Register several classes at once.
+ */
+- (void) registerClassesForCells:(NSArray<Class>*) classesToRegister;
+
+/**
  * A short version of "register class for reuse identifier".
  * Calls +reuseIdetifier if classToRegister is a subclass of VBTableViewCell.
  * Else - use stringFromClass as identifier.
  */
 - (void) registerClassForHeaderFooter:(Class) classToRegister;
+
+/**
+ * Register several classes at once.
+ */
+- (void) registerClassesForHeaderFooters:(NSArray<Class>*) classesToRegister;
 
 #pragma mark - pagination
 /**
