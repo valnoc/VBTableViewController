@@ -19,7 +19,6 @@
 		5BD998BC1BAEE66C002B78E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD998BA1BAEE66C002B78E5 /* LaunchScreen.xib */; };
 		5BD998C81BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD998C71BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.m */; };
 		5BE386B21C6150B100C2CDFD /* VBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE386AD1C6150B100C2CDFD /* VBTableViewCell.m */; };
-		5BE386B31C6150B100C2CDFD /* VBTableViewItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE386AF1C6150B100C2CDFD /* VBTableViewItemCell.m */; };
 		5BE386B41C6150B100C2CDFD /* VBTableViewItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE386B11C6150B100C2CDFD /* VBTableViewItemView.m */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +55,6 @@
 		5BD998C71BAEE66D002B78E5 /* VBTableViewController_ExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController_ExamplesTests.m; sourceTree = "<group>"; };
 		5BE386AC1C6150B100C2CDFD /* VBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewCell.h; sourceTree = "<group>"; };
 		5BE386AD1C6150B100C2CDFD /* VBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewCell.m; sourceTree = "<group>"; };
-		5BE386AE1C6150B100C2CDFD /* VBTableViewItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewItemCell.h; sourceTree = "<group>"; };
-		5BE386AF1C6150B100C2CDFD /* VBTableViewItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewItemCell.m; sourceTree = "<group>"; };
 		5BE386B01C6150B100C2CDFD /* VBTableViewItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewItemView.h; sourceTree = "<group>"; };
 		5BE386B11C6150B100C2CDFD /* VBTableViewItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewItemView.m; sourceTree = "<group>"; };
 		76E15F7AD6E5848EF5E7CC6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,8 +179,6 @@
 			children = (
 				5BE386AC1C6150B100C2CDFD /* VBTableViewCell.h */,
 				5BE386AD1C6150B100C2CDFD /* VBTableViewCell.m */,
-				5BE386AE1C6150B100C2CDFD /* VBTableViewItemCell.h */,
-				5BE386AF1C6150B100C2CDFD /* VBTableViewItemCell.m */,
 				5BE386B01C6150B100C2CDFD /* VBTableViewItemView.h */,
 				5BE386B11C6150B100C2CDFD /* VBTableViewItemView.m */,
 			);
@@ -353,7 +348,6 @@
 				5BE386B21C6150B100C2CDFD /* VBTableViewCell.m in Sources */,
 				5BD998B41BAEE66C002B78E5 /* ViewController.m in Sources */,
 				5BE386B41C6150B100C2CDFD /* VBTableViewItemView.m in Sources */,
-				5BE386B31C6150B100C2CDFD /* VBTableViewItemCell.m in Sources */,
 				5B2186CD1BAEFEC100FDD2BD /* VBTableViewController.m in Sources */,
 				5BD998B11BAEE66C002B78E5 /* AppDelegate.m in Sources */,
 				5B0197361C63E132009B16E7 /* VBTableViewHeaderFooterView.m in Sources */,

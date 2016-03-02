@@ -24,6 +24,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "VBTableViewItemView.h"
+
 /**
  *  VBTableViewCell is a base class for table cell.
  */
@@ -33,18 +35,27 @@
 /**
  *  @return Identifier for reusability.
  */
-+ (nonnull NSString *) reuseIdentifier;
++ (NSString *) reuseIdentifier;
 
-#pragma mark - setup
+#pragma mark - itemView
 /**
- *  Implement in subclass for manual ui constructing.
+ *  Must be implemented in subclass.
+ *  A subclass of VBTableVIewItemView
+ *
+ *  @return Class
  */
-- (void) setupUI;
++ (Class) itemViewClass;
+
+/**
+ *  Is created automatically using itemViewClass. can be changed at any time.
+ */
+@property (nonatomic, strong) VBTableViewItemView* itemView;
 
 #pragma mark - height
 + (CGFloat) estimatedHeight;
++ (CGFloat) estimatedHeightWithItem:(id)item;
 
 #pragma mark - color
-@property (nonatomic, strong, nullable) UIColor* selectedBackgroundColor;
+@property (nonatomic, strong) UIColor* selectedBackgroundColor;
 
 @end

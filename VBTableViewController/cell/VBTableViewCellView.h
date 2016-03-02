@@ -27,7 +27,7 @@
 /**
  *  VBTableViewItemView is a view to show entity.
  */
-@interface VBTableViewItemView : UIView
+@interface VBTableViewCellView : UIView
 
 /**
  *  Setting of new item causes chain: prepareForReuse, updateUI, updateLayout

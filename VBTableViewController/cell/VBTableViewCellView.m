@@ -22,50 +22,48 @@
 //    SOFTWARE.
 //
 
-#import "VBTableViewItemCell.h"
+#import "VBTableViewCellView.h"
 
-#import "VBAutolayout.h"
-#import "VBInvalidClassException.h"
+@implementation VBTableViewCellView
 
-@interface VBTableViewItemCell ()
-
-@end
-
-@implementation VBTableViewItemCell
-
-#pragma mark - setup
-- (void) setupUI {
-    [super setupUI];
-    
-    if ([self.class itemViewClass]) {
-        self.itemView = [[[self.class itemViewClass] alloc] initWithFrame:self.contentView.bounds];
-        if ([self.itemView isKindOfClass:[VBTableViewItemView class]] == NO) {
-            @throw [VBInvalidClassException exception];
-        }
+- (instancetype) init {
+    self = [super init];
+    if (self) {
+        [self setupUI];
     }
+    return self;
 }
 
-- (void) setItemView:(VBTableViewItemView *)itemView {
-    _itemView = itemView;
-    
-    [self.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    
-    if (self.itemView) {
-        [self.contentView addSubview:self.itemView
-                          withLayout:@{VBAutolayoutAttributeTop:        @"0",
-                                       VBAutolayoutAttributeBottom:     @"0@999",
-                                       VBAutolayoutAttributeLeading:    @"0",
-                                       VBAutolayoutAttributeTrailing:   @"0"}];
+- (instancetype) initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupUI];
     }
+    return self;
+}
+
+#pragma mark - item
+- (void) setItem:(id)item {
+    _item = item;
+
+    [self prepareForReuse];
+    [self updateUI];
+    
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
+#pragma mark - ui
+- (void) setupUI {
+}
+- (void) prepareForReuse {
+}
+- (void) updateUI {
 }
 
 #pragma mark - height
-+ (CGFloat) estimatedHeight {
-    return [self estimatedHeightWithItem:nil];
-}
-
 + (CGFloat) estimatedHeightWithItem:(id)item {
-    return [[self itemViewClass] estimatedHeightWithItem:item];
+    return 44.0f;
 }
 
 @end

@@ -25,6 +25,8 @@
 #import "VBTableViewCell.h"
 
 #import "UIKit+VBProgrammaticCreation.h"
+#import "VBAutolayout.h"
+#import "VBInvalidClassException.h"
 
 @implementation VBTableViewCell
 
@@ -65,12 +67,39 @@
 
 #pragma mark - setup
 - (void) setupUI {
+    if ([self.class itemViewClass]) {
+        self.itemView = [[[self.class itemViewClass] alloc] initWithFrame:self.contentView.bounds];
+        if ([self.itemView isKindOfClass:[VBTableViewItemView class]] == NO) {
+            @throw [VBInvalidClassException exception];
+        }
+    }
+}
+
++ (Class)itemViewClass {
+    return [VBTableViewItemView class];
+}
+
+- (void) setItemView:(VBTableViewItemView *)itemView {
+    _itemView = itemView;
     
+    [self.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
+    if (self.itemView) {
+        [self.contentView addSubview:self.itemView
+                          withLayout:@{VBAutolayoutAttributeTop:        @"0",
+                                       VBAutolayoutAttributeBottom:     @"0@999",
+                                       VBAutolayoutAttributeLeading:    @"0",
+                                       VBAutolayoutAttributeTrailing:   @"0"}];
+    }
 }
 
 #pragma mark - height
 + (CGFloat) estimatedHeight {
-    return 44.0f;
+    return [self estimatedHeightWithItem:nil];
+}
+
++ (CGFloat) estimatedHeightWithItem:(id)item {
+    return [[self itemViewClass] estimatedHeightWithItem:item];
 }
 
 #pragma mark - color
