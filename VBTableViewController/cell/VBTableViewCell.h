@@ -24,7 +24,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "VBTableViewItemView.h"
+#import "VBTableViewCellView.h"
 
 /**
  *  VBTableViewCell is a base class for table cell.
@@ -49,7 +49,7 @@
 /**
  *  Is created automatically using itemViewClass. can be changed at any time.
  */
-@property (nonatomic, strong) VBTableViewItemView* itemView;
+@property (nonatomic, strong) VBTableViewCellView* itemView;
 
 #pragma mark - height
 + (CGFloat) estimatedHeight;

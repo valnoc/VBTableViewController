@@ -25,7 +25,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  VBTableViewItemView is a view to show entity.
+ *  VBTableViewCellView is a view to show entity.
  */
 @interface VBTableViewCellView : UIView
 
