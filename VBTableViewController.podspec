@@ -10,13 +10,13 @@
 Pod::Spec.new do |s|
   s.name             = "VBTableViewController"
   s.version          = "2.0.0"
-  s.summary          = "VBTableViewController"
+  s.summary          = "VBTableViewController extends UITableViewController by adding pagination, pull-to-refresh and other useful features."
   s.description      = <<-DESC
 VBTableViewController extends UITableViewController by adding pagination, pull-to-refresh and other useful features.
 
-VBTableViewCell and VBTableViewItemCell are useful base classes for cells.
+VBTableViewCell is a base class for cells. Each cell contains only apporpriate VBTableViewCellView as a subview. The idea is to setup UI of VBTableViewCellView by setting its item property (which calls updateUI).
 
-VBTableViewHeaderFooterView and VBTableViewHeaderFooterItemView are useful base classes for headerFooter views.
+VBTableViewHeader uses the same idea as VBTableViewCell.
                        DESC
   s.homepage         = "https://github.com/valnoc/VBTableViewController"
   s.license          = 'MIT'
