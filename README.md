@@ -3,9 +3,10 @@ VBTableViewController
 
 <b>VBTableViewController</b> extends UITableViewController by adding pagination, pull-to-refresh and other useful features.
 
-<b>VBTableViewCell</b> and <b>VBTableViewItemCell</b> are useful base classes for cells.
+<b>VBTableViewCell</b> is a base class for cells. Each cell contains only apporpriate <b>VBTableViewCellView</b> as a subview. 
+The idea is to setup UI of VBTableViewCellView by setting its item property (which calls updateUI).
 
-<b>VBTableViewHeaderFooterView</b> and <b>VBTableViewHeaderFooterItemView</b> are useful base classes for headerFooter views.
+<b>VBTableViewHeader</b> uses the same idea as VBTableViewCell.
 
 ## How to install
 Use CocoaPods
