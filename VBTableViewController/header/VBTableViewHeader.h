@@ -22,48 +22,37 @@
 //    SOFTWARE.
 //
 
-#import "VBTableViewHeaderFooterItemView.h"
+#import <UIKit/UIKit.h>
 
-@implementation VBTableViewHeaderFooterItemView
+#import "VBTableViewHeaderView.h"
 
-- (instancetype) init {
-    self = [super init];
-    if (self) {
-        [self setupUI];
-    }
-    return self;
-}
+/**
+ *  VBTableViewHeader is a base class for table header-footer.
+ */
+@interface VBTableViewHeader : UITableViewHeaderFooterView
 
-- (instancetype) initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self setupUI];
-    }
-    return self;
-}
+#pragma mark - reuse identifier
+/**
+ *  @return Identifier for reusability.
+ */
++ (NSString *) reuseIdentifier;
 
-#pragma mark - item
-- (void) setItem:(id)item {
-    _item = item;
-    
-    [self prepareForReuse];
-    [self updateUI];
-    
-    [self setNeedsLayout];
-    [self layoutIfNeeded];
-}
+#pragma mark - itemView
+/**
+ *  Must be implemented in subclass.
+ *  A subclass of VBTableVIewItemView
+ *
+ *  @return Class
+ */
++ (Class) itemViewClass;
 
-#pragma mark - ui
-- (void) setupUI {
-}
-- (void) prepareForReuse {
-}
-- (void) updateUI {
-}
+/**
+ *  Is created automatically using itemViewClass. can be changed at any time.
+ */
+@property (nonatomic, strong) VBTableViewHeaderView* itemView;
 
 #pragma mark - height
-+ (CGFloat) estimatedHeightWithItem:(id)item {
-    return 44.0f;
-}
++ (CGFloat) estimatedHeight;
++ (CGFloat) estimatedHeightWithItem:(id)item;
 
 @end

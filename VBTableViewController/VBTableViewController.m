@@ -27,7 +27,7 @@
 #import <WZProtocolInterceptor/WZProtocolInterceptor.h>
 
 #import "VBTableViewCell.h"
-#import "VBTableViewHeaderFooterView.h"
+#import "VBTableViewHeader.h"
 
 @interface VBTableViewController ()
 
@@ -97,7 +97,7 @@
 }
 
 - (void) registerClassForHeaderFooter:(Class) classToRegister {
-    if ([classToRegister isSubclassOfClass:[VBTableViewHeaderFooterView class]]) {
+    if ([classToRegister isSubclassOfClass:[VBTableViewHeader class]]) {
         [self.tableView registerClass:classToRegister
    forHeaderFooterViewReuseIdentifier:[classToRegister reuseIdentifier]];
     }else{
