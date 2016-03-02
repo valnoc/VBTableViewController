@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "VBTableViewController"
-  s.version          = "1.1.0"
+  s.version          = "2.0.0"
   s.summary          = "VBTableViewController"
   s.description      = <<-DESC
 VBTableViewController extends UITableViewController by adding pagination, pull-to-refresh and other useful features.
