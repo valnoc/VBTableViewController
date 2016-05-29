@@ -86,6 +86,19 @@
     self.tableView.tableHeaderView = header;
 }
 
+- (void) fitTableFooterView {
+    UIView* footer = self.tableView.tableFooterView;
+    [footer setNeedsLayout];
+    [footer layoutIfNeeded];
+    
+    CGFloat height = [footer systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    CGRect frame = footer.frame;
+    
+    frame.size.height = height;
+    footer.frame = frame;
+    self.tableView.tableFooterView = footer;
+}
+
 - (void) registerClassesForCells:(NSArray<Class>*) classesToRegister {
     __weak typeof(self) __self = self;
     [classesToRegister enumerateObjectsUsingBlock:^(Class  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

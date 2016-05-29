@@ -63,6 +63,11 @@
 - (void) fitTableHeaderView;
 
 /**
+ * Change the height of tableView.tableHeaderView using constraints. This is done automatically only for section headers.
+ */
+- (void) fitTableFooterView;
+
+/**
  * A short version of "register class for reuse identifier". 
  * Calls +reuseIdetifier if classToRegister is a subclass of VBTableViewCell.
  * Else - use stringFromClass as identifier.
