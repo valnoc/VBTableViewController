@@ -178,6 +178,9 @@
     _paginationEnabled = paginationEnabled;
     if (_paginationEnabled) {
         self.prePaginationFooterView = self.tableView.tableFooterView;
+        if (self.prePaginationFooterView == self.paginationView) {
+            self.prePaginationFooterView = nil;
+        }
         self.tableView.tableFooterView = self.paginationView;
     }else{
         self.tableView.tableFooterView = self.prePaginationFooterView;
@@ -194,7 +197,24 @@
         UIActivityIndicatorView* aiv = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [aiv startAnimating];
         [view addSubview:aiv];
-        aiv.center = CGPointMake(view.bounds.size.width / 2, view.bounds.size.height / 2);
+        aiv.translatesAutoresizingMaskIntoConstraints = NO;
+        [view addConstraint:
+         [NSLayoutConstraint constraintWithItem:aiv
+                                      attribute:NSLayoutAttributeCenterX
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:view
+                                      attribute:NSLayoutAttributeCenterX
+                                     multiplier:1.0f
+                                       constant:0.0f]];
+        [view addConstraint:
+         [NSLayoutConstraint constraintWithItem:aiv
+                                      attribute:NSLayoutAttributeCenterY
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:view
+                                      attribute:NSLayoutAttributeCenterY
+                                     multiplier:1.0f
+                                       constant:0.0f]];
+//        aiv.center = CGPointMake(view.bounds.size.width / 2, view.bounds.size.height / 2);
         
         _paginationView = view;
     }
