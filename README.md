@@ -1,5 +1,6 @@
 VBTableViewController
 ===========
+[![](https://img.shields.io/cocoapods/v/VBTableViewController.svg)]()
 
 <b>VBTableViewController</b> extends UITableViewController by adding pagination, pull-to-refresh and other useful features.
 
